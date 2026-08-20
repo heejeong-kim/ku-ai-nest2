@@ -1,1 +1,777 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 KU 캠퍼스타운 AI Nest · 에코푸드 분야 특화교육</title>
+<meta name="description" content="2026 KU 캠퍼스타운 AI Nest 프로그램 · 에코푸드 분야 특화교육">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--yellow:#38a169;--yellow2:#1f7a4d;--yellow-soft:#dcfce7;--yellow-pale:#f2fbf5;--ink:#153427;--ink2:#345347;--muted:#688075;--line:#d8e7dd;--bg:#f3f8f4;--white:#fff;--blue:#24845a;--blue-soft:#eaf8ef;--blue-line:#bfe3ca;--green:#157347;--red:#b63d2f;--shadow:0 14px 42px rgba(21,71,45,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans KR',sans-serif;font-size:18px;line-height:1.75;word-break:keep-all;-webkit-font-smoothing:antialiased}.shell{width:min(1520px,calc(100% - 64px));margin:0 auto}a{color:var(--blue)}
+.hero{min-height:86vh;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 78% 28%,rgba(56,161,105,.22),transparent 24%),radial-gradient(circle at 18% 74%,rgba(49,90,216,.07),transparent 28%),linear-gradient(135deg,#fff 0%,#effaf2 62%,#64c987 160%);background-size:120% 120%,135% 135%,140% 140%;background-position:78% 28%,18% 74%,0% 50%;animation:heroBgShift 16s ease-in-out infinite alternate;border-bottom:1px solid var(--line)}.hero:before,.hero:after{content:"";position:absolute;border-radius:999px;pointer-events:none;filter:blur(2px);opacity:.72}.hero:before{width:220px;height:220px;right:5%;top:9%;background:rgba(56,161,105,.22);animation:heroFloat 7s ease-in-out infinite}.hero:after{width:110px;height:110px;right:40%;bottom:13%;background:rgba(49,90,216,.09);animation:heroFloat 9s ease-in-out infinite reverse}.hero-leaves{position:absolute;inset:-12%;z-index:0;pointer-events:none;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27120%27 height=%27120%27 viewBox=%270 0 120 120%27%3E%3Cg fill=%27%23cfc7ad%27%3E%3Cellipse cx=%2760%27 cy=%2768%27 rx=%2718%27 ry=%2716%27/%3E%3Cellipse cx=%2738%27 cy=%2748%27 rx=%278%27 ry=%2711%27 transform=%27rotate(-20 38 48)%27/%3E%3Cellipse cx=%2753%27 cy=%2737%27 rx=%278%27 ry=%2711%27 transform=%27rotate(-8 53 37)%27/%3E%3Cellipse cx=%2769%27 cy=%2737%27 rx=%278%27 ry=%2711%27 transform=%27rotate(8 69 37)%27/%3E%3Cellipse cx=%2784%27 cy=%2749%27 rx=%278%27 ry=%2711%27 transform=%27rotate(20 84 49)%27/%3E%3C/g%3E%3C/svg%3E");background-size:96px 96px;transform:rotate(-2.5deg) scale(1.01);animation:pawFieldDrift 38s ease-in-out infinite alternate}.hero-inner{position:relative;z-index:2;padding:120px 0 100px}.hero-copy{animation:heroCopyDrift 5.4s ease-in-out 1.35s infinite}.hero-inner>p,.hero-inner>h1,.hero-inner>.hero-meta,.hero-inner>.hero-actions{max-width:54%}.hero-visual{position:absolute;z-index:1;right:max(26px,calc((100vw - 1520px)/2));top:50%;width:min(610px,42vw);height:min(500px,56vh);transform:translateY(-50%);perspective:1100px;will-change:transform}.pet-card{position:absolute;overflow:hidden;border-radius:24px;border:1px solid rgba(255,255,255,.9);background:#fff;box-shadow:0 22px 58px rgba(18,85,49,.17);transition:box-shadow .25s ease;will-change:transform}.pet-card img{width:100%;height:100%;display:block;object-fit:cover;image-rendering:auto}.pet-card:after{content:"";position:absolute;inset:0;background:linear-gradient(145deg,rgba(255,255,255,.18),transparent 42%,rgba(56,161,105,.08));pointer-events:none}.pet-card.p1{width:66%;height:68%;right:2%;top:16%;z-index:3;animation:petFloat1 6.8s ease-in-out infinite}.pet-card.p2{width:42%;height:42%;left:0;top:2%;z-index:2;transform:rotate(-5deg);animation:petFloat2 7.8s ease-in-out infinite}.pet-card.p3{width:40%;height:40%;left:7%;bottom:0;z-index:4;transform:rotate(4deg);animation:petFloat3 8.6s ease-in-out infinite}.pet-card:hover{box-shadow:0 30px 80px rgba(18,85,49,.25)}@keyframes petFloat1{0%,100%{transform:translate3d(0,0,0) rotate(1deg)}50%{transform:translate3d(-7px,-14px,0) rotate(-1deg)}}@keyframes petFloat2{0%,100%{transform:translate3d(0,0,0) rotate(-5deg)}50%{transform:translate3d(8px,12px,0) rotate(-2deg)}}@keyframes petFloat3{0%,100%{transform:translate3d(0,0,0) rotate(4deg)}50%{transform:translate3d(-5px,-10px,0) rotate(1deg)}}.hero-copy>*{opacity:0;will-change:transform,opacity,filter}.hero-copy .eyebrow{transform:translateY(14px);filter:blur(5px);animation:heroEyebrow .7s cubic-bezier(.16,1,.3,1) .08s forwards}.hero-copy h1{transform:translateY(34px) scale(.985);filter:blur(8px);animation:heroTitle .95s cubic-bezier(.16,1,.3,1) .18s forwards}.hero-copy h1 span{display:inline-block;background-size:0 100%;background-repeat:no-repeat;animation:heroHighlight .8s ease .8s forwards,heroAccentPulse 3.6s ease-in-out 1.45s infinite}.hero-copy>p:not(.eyebrow){transform:translateY(24px);filter:blur(5px);animation:heroRevealSoft .8s cubic-bezier(.16,1,.3,1) .45s forwards}.hero-copy .hero-meta{transform:translateY(20px);animation:heroRevealSoft .72s cubic-bezier(.16,1,.3,1) .62s forwards}.hero-copy .hero-actions{transform:translateY(18px);animation:heroRevealSoft .72s cubic-bezier(.16,1,.3,1) .78s forwards}.hero-copy .pill{transition:transform .22s ease,box-shadow .22s ease}.hero-copy .pill:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(18,85,49,.12)}.hero-copy .btn{transition:transform .22s ease,box-shadow .22s ease,background .22s ease}.hero-copy .btn:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.12)}@keyframes heroEyebrow{to{opacity:1;transform:translateY(0);filter:blur(0)}}@keyframes heroTitle{0%{opacity:0;transform:translateY(34px) scale(.985);filter:blur(8px)}60%{opacity:1;filter:blur(0)}100%{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}@keyframes heroRevealSoft{to{opacity:1;transform:translateY(0);filter:blur(0)}}@keyframes heroHighlight{to{background-size:100% 100%}}@keyframes heroBgShift{0%{background-position:78% 28%,18% 74%,0% 50%}50%{background-position:72% 34%,24% 68%,52% 46%}100%{background-position:84% 22%,12% 80%,100% 54%}}@keyframes pawFieldDrift{0%{background-position:0 0;transform:rotate(-2.5deg) scale(1.01) translate3d(0,0,0)}50%{background-position:7px 6px;transform:rotate(-2deg) scale(1.012) translate3d(2px,-1px,0)}100%{background-position:14px 12px;transform:rotate(-2.5deg) scale(1.01) translate3d(0,0,0)}}@keyframes heroAccentPulse{0%,100%{translate:0 0;text-shadow:0 0 16px rgba(56,161,105,.08)}50%{translate:0 -3px;text-shadow:0 8px 28px rgba(56,161,105,.28)}}@keyframes heroCopyDrift{0%,100%{transform:translate3d(0,0,0)}35%{transform:translate3d(2px,-8px,0)}70%{transform:translate3d(-1px,-3px,0)}}@keyframes heroFloat{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-18px,0)}}.eyebrow{font-size:15px;font-weight:700;letter-spacing:.14em;color:#1f6b46;margin:0 0 16px}.hero h1{margin:0;font-size:clamp(46px,5.6vw,82px);line-height:1.06;letter-spacing:-.048em}.hero h1 span{background:linear-gradient(transparent 62%,rgba(56,161,105,.58) 62%)}.hero p{font-size:22px;color:var(--ink2);margin:26px 0 0}.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}.pill{border:1px solid #75bc8b;background:rgba(255,255,255,.8);border-radius:999px;padding:8px 14px;font-size:16px;font-weight:600}.hero-actions{display:flex;gap:12px;margin-top:36px;flex-wrap:wrap}.hero-nav-cta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;width:min(820px,54%);max-width:none}.hero-nav-link{position:relative;min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 16px;border:1px solid rgba(23,23,23,.12);border-radius:17px;background:rgba(255,255,255,.9);color:var(--ink);text-decoration:none;font-size:16px;font-weight:700;white-space:nowrap;box-shadow:0 14px 32px rgba(18,85,49,.11);backdrop-filter:blur(10px);transition:transform .22s ease,box-shadow .22s ease,background .22s ease,border-color .22s ease}.hero-nav-link:hover,.hero-nav-link:focus-visible{transform:translateY(-5px);box-shadow:0 20px 40px rgba(18,85,49,.17);border-color:rgba(23,23,23,.22)}.hero-nav-link.curriculum{background:#171717;color:#fff;border-color:#171717}.hero-nav-link.special{background:linear-gradient(135deg,#f5c400,#9be0b3);color:#171717;border-color:#2d8c5a}.hero-nav-link.lecture{background:rgba(255,255,255,.94);color:#171717;border-color:rgba(49,90,216,.2)}.hero-nav-label{display:inline-flex;align-items:center;gap:8px}.hero-nav-icon{font-size:20px;line-height:1}.hero-nav-arrow{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:999px;background:rgba(23,23,23,.08);font-size:19px;line-height:1;transition:transform .22s ease,background .22s ease}.hero-nav-link.curriculum .hero-nav-arrow{background:rgba(56,161,105,.18);color:var(--yellow)}.hero-nav-link.special .hero-nav-arrow{background:rgba(23,23,23,.12)}.hero-nav-link.lecture .hero-nav-arrow{background:var(--blue-soft);color:var(--blue)}.hero-nav-link:hover .hero-nav-arrow,.hero-nav-link:focus-visible .hero-nav-arrow{transform:translateX(4px)}.btn{display:inline-flex;text-decoration:none;align-items:center;border-radius:12px;padding:13px 18px;font-weight:700}.btn.primary{background:#171717;color:#fff}.btn.ghost{background:#fff;border:1px solid var(--line);color:#171717}
+main{padding-bottom:110px}.section{padding-top:92px;scroll-margin-top:24px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:26px}.kicker{font-size:14px;font-weight:700;color:#1f6b46;letter-spacing:.11em;margin:0 0 7px}.section h2{margin:0;font-size:40px;line-height:1.22;letter-spacing:-.035em}.section-desc{max-width:760px;color:var(--muted);margin:0}.special-deck-cta{display:inline-flex;align-items:center;gap:8px;flex:0 0 auto;padding:11px 15px;border-radius:12px;background:#171717;color:#fff;text-decoration:none;font-size:15px;font-weight:700;box-shadow:0 10px 24px rgba(0,0,0,.10);transition:transform .22s ease,box-shadow .22s ease,background .22s ease}.special-deck-cta:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(0,0,0,.16);background:#2a2a2a}.special-deck-cta span{color:var(--yellow);font-size:17px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}.overview{padding:28px}.overview-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.info{background:#faf9f5;border-radius:14px;padding:20px}.info.wide{grid-column:1/-1}.info b{display:block;font-size:14px;color:#1f6b46;margin-bottom:7px}.info span{font-size:18px;color:var(--ink2)}.output-wrap{padding-bottom:24px}.output-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:12px}.output-card{min-height:128px;padding:20px;border:1px solid var(--line);border-radius:16px;background:#fff;display:grid;grid-template-rows:28px auto;align-content:start;gap:22px}.output-card .output-label{display:flex;align-items:flex-start;font-size:14px;font-weight:700;line-height:1.4;color:#1f6b46}.output-card strong{display:block;font-size:18px;line-height:1.55;color:var(--ink);font-weight:600}.output-card.final{background:#171717;border-color:#171717;box-shadow:0 14px 30px rgba(0,0,0,.13)}.output-card.final .output-label{color:var(--yellow)}.output-card.final strong{color:#fff}
+.table-wrap{overflow:auto}.data-table{width:100%;border-collapse:collapse;min-width:760px;background:#fff}.data-table th,.data-table td{padding:13px 15px;border:1px solid var(--line);text-align:left;vertical-align:top;font-size:18px}.data-table th{background:var(--yellow-soft)}.data-table td{color:var(--ink2)}.data-table td:first-child{color:var(--ink);font-weight:600}.schedule{margin-top:18px;overflow:hidden;scroll-margin-top:24px}.curriculum-table{table-layout:fixed;min-width:1320px}.curriculum-table .col-time{width:170px}.curriculum-table .col-duration{width:90px}.curriculum-table .col-stage{width:470px}.curriculum-table .col-work{width:auto}.curriculum-table th:nth-child(-n+3),.curriculum-table td:nth-child(-n+3){white-space:nowrap}.task-list{margin:0;padding-left:22px}.task-list li{margin:2px 0}.curriculum-table .break-row td{background:#f2f2f0;color:var(--muted)}.curriculum-table .break-row td:first-child{color:var(--muted)}.source-list{font-size:16px;color:var(--muted)}
+details{border:1px solid var(--blue-line);border-radius:15px;background:#fff;overflow:hidden;margin:16px 0}details>summary{cursor:pointer;list-style:none;font-weight:700;padding:17px 20px;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;gap:10px}details>summary::-webkit-details-marker{display:none}details>summary::before{content:"＋";display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border:1px solid var(--blue-line);border-radius:7px;background:#fff;color:var(--blue);font-size:17px;line-height:1}details>summary::after{content:"열기";margin-left:auto;font-size:14px;font-weight:700;color:#5b75c8}details[open]>summary::before{content:"−"}details[open]>summary::after{content:"닫기"}.details-body{padding:18px 22px}.details-body>*:first-child{margin-top:0}.details-body>*:last-child{margin-bottom:0}
+.special-intro,.lesson{padding:30px 34px;margin-top:18px}.special-intro h3,.lesson h3{font-size:28px;line-height:1.35;margin:0 0 16px}.special-intro h4,.lesson h4{font-size:22px;margin:28px 0 10px}.special-intro ul,.lesson ul{padding-left:23px;color:var(--ink2)}.special-intro li,.lesson li{margin:6px 0}.note{margin:16px 0;padding:15px 18px;background:#f2f8f5;border-left:4px solid var(--green);border-radius:0 10px 10px 0}.warn{margin:16px 0;padding:16px 18px;background:#fff0ed;border-left:4px solid var(--red);border-radius:0 10px 10px 0}.callout{margin:16px 0;padding:18px 20px;background:#eef4ff;border:1px solid #d7e1fb;border-radius:14px}.callout h4{margin-top:0}.lecture-nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:15px;padding:10px;display:flex;gap:7px;overflow:auto;box-shadow:0 8px 24px rgba(0,0,0,.07);margin-bottom:20px}.lecture-nav a{flex:1;min-width:150px;text-align:center;text-decoration:none;color:#171717;background:#faf9f5;padding:10px 12px;border-radius:9px;font-size:16px;font-weight:700}.lecture-nav a:hover,.lecture-nav a.active{background:var(--yellow-soft)}.lesson{scroll-margin-top:78px}.lesson-num{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:var(--yellow);font-weight:700;margin-bottom:14px}.subsection{border-top:1px solid var(--line);margin-top:28px;padding-top:24px}.output{margin-top:16px;padding:17px 19px;background:#f5f8ff;border:1px solid #dce5fa;border-radius:12px}.output b{color:var(--blue)}
+.prompt-block{position:relative;margin:18px 0 24px;background:#0c0c0d;border:1px solid #2b2b2e;border-radius:14px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.13)}.prompt-head{height:46px;display:flex;align-items:center;justify-content:space-between;padding:0 14px 0 18px;border-bottom:1px solid #2e2e31;background:#141416;color:#d7d7d7}.prompt-head span{font-family:'IBM Plex Mono',monospace;font-size:13px}.copy-btn{font-family:'IBM Plex Sans KR',sans-serif;font-size:13px;font-weight:700;color:#fff;border:1px solid #45454a;background:#242427;border-radius:8px;padding:6px 10px;cursor:pointer}.copy-btn:hover{background:#333337}.copy-btn.done{background:#1c6b4b;border-color:#1c6b4b}.prompt-block pre{margin:0;padding:22px;overflow:auto;color:#f2f2f2;background:#0c0c0d;white-space:pre-wrap;word-break:break-word}.prompt-block code{font-family:'IBM Plex Mono',monospace;font-size:15px;line-height:1.7;color:#f0f0f0}.code-js code{color:#f4f4f4}
+.checklist{list-style:none;padding-left:0!important}.checklist li{padding-left:28px;position:relative}.checklist li:before{content:"☐";position:absolute;left:0;top:0;color:#1f6b46}.footer{margin-top:90px;padding:30px 0;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}.backtop{position:fixed;right:24px;bottom:24px;width:48px;height:48px;border:none;border-radius:50%;background:#171717;color:#fff;font-weight:700;opacity:0;pointer-events:none;transition:.2s;z-index:90}.backtop.show{opacity:1;pointer-events:auto}.float-nav{position:fixed;right:24px;top:96px;z-index:120;display:flex;flex-direction:column;gap:10px}.float-nav a{position:relative;width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:#171717;color:#f5c400;border:1px solid rgba(56,161,105,.35);box-shadow:0 10px 28px rgba(0,0,0,.16);text-decoration:none;transition:transform .2s ease,background .2s ease}.float-nav a:hover,.float-nav a:focus-visible{transform:translateX(-4px);background:#242424}.float-nav svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}.float-nav .tip{position:absolute;right:58px;white-space:nowrap;padding:7px 10px;border-radius:8px;background:#171717;color:#fff;font-size:14px;font-weight:700;opacity:0;transform:translateX(6px);pointer-events:none;transition:.2s}.float-nav a:hover .tip,.float-nav a:focus-visible .tip{opacity:1;transform:none}@media(max-width:760px){.float-nav{right:12px;top:auto;bottom:82px}.float-nav a{width:44px;height:44px;border-radius:13px}.float-nav .tip{display:none}}@media(prefers-reduced-motion:reduce){.hero,.hero:before,.hero:after,.hero-leaves,.pet-card,.hero-copy,.hero-copy>*{animation:none!important}.hero-copy>*{opacity:1;transform:none}.hero-visual,.pet-card{transition:none!important}.float-nav a{transition:none}}
+@media(max-width:1100px){.shell{width:min(100% - 40px,1520px)}.overview-grid{grid-template-columns:1fr}.output-cards{grid-template-columns:1fr 1fr}.output-card.final{grid-column:1/-1}.info.wide{grid-column:auto}.section-head{display:block}.section-desc{margin-top:10px}.hero h1{font-size:56px}.hero-inner>p,.hero-inner>h1,.hero-inner>.hero-meta,.hero-inner>.hero-actions{max-width:56%}.hero-visual{right:18px;width:min(500px,42vw);height:430px}.lecture-nav a{min-width:138px}}
+@media(max-width:760px){body{font-size:18px}.section-head{align-items:flex-start}.special-deck-cta{padding:10px 12px;font-size:14px}.hero-nav-cta{grid-template-columns:1fr;width:100%;gap:10px}.hero-nav-link{min-height:62px;font-size:15px;padding:12px 14px}.hero-nav-icon{font-size:18px}.hero-nav-arrow{width:28px;height:28px;font-size:18px}.output-cards{grid-template-columns:1fr}.output-card.final{grid-column:auto}.shell{width:min(100% - 28px,1520px)}.hero{min-height:auto;display:block}.hero:before{width:130px;height:130px;right:-24px;top:40px}.hero:after{width:72px;height:72px;right:auto;left:-18px;bottom:20%}.hero-inner{padding:92px 0 330px}.hero-inner>p,.hero-inner>h1,.hero-inner>.hero-meta,.hero-inner>.hero-actions{max-width:100%}.hero-visual{top:auto;bottom:28px;left:50%;right:auto;width:min(94vw,520px);height:290px;transform:translateX(-50%)}.pet-card.p1{width:62%;height:66%;right:2%;top:18%}.pet-card.p2{width:40%;height:40%;left:1%;top:4%}.pet-card.p3{width:38%;height:38%;left:9%;bottom:2%}.hero h1{font-size:40px}.hero p{font-size:19px}.section{padding-top:68px}.section h2{font-size:31px}.special-intro,.lesson{padding:24px 20px}.special-intro h3,.lesson h3{font-size:24px}.lecture-nav{top:0;border-radius:0;margin-left:-14px;margin-right:-14px}.lecture-nav a{flex:none;min-width:auto;font-size:15px;padding:8px 10px}.prompt-block pre{padding:18px}.prompt-block code{font-size:14px}.data-table{min-width:680px}.data-table th,.data-table td{font-size:18px}}
+.eco-card{position:absolute;border:1px solid rgba(255,255,255,.92);box-shadow:0 24px 60px rgba(18,85,49,.18);backdrop-filter:blur(10px);overflow:hidden}.eco-main{right:2%;top:12%;width:68%;height:72%;border-radius:30px;padding:38px;display:flex;flex-direction:column;justify-content:flex-end;background:radial-gradient(circle at 72% 22%,rgba(255,255,255,.88),transparent 16%),linear-gradient(150deg,#b8efc7 0%,#62c584 46%,#176b45 100%);color:#fff;animation:petFloat1 6.8s ease-in-out infinite}.eco-main:before{content:"";position:absolute;width:250px;height:250px;border-radius:55% 45% 52% 48%;background:rgba(255,255,255,.12);top:-70px;right:-45px;transform:rotate(25deg)}.eco-main .eco-icon{font-size:78px;filter:drop-shadow(0 12px 20px rgba(0,0,0,.16));margin-bottom:auto}.eco-main strong{font:700 23px/1.2 'IBM Plex Mono',monospace;letter-spacing:.04em}.eco-main small{font-size:16px;margin-top:8px}.eco-sub{width:43%;height:36%;left:0;border-radius:24px;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;color:var(--ink);background:rgba(255,255,255,.94)}.eco-sub>span{font-size:46px;margin-bottom:auto}.eco-sub b{font-size:20px}.eco-sub small{font-size:13px;color:var(--muted)}.eco-market{top:0;transform:rotate(-5deg);animation:petFloat2 7.8s ease-in-out infinite}.eco-zero{bottom:0;left:8%;transform:rotate(4deg);animation:petFloat3 8.6s ease-in-out infinite}@media(max-width:900px){.eco-main{padding:24px}.eco-main .eco-icon{font-size:58px}.eco-main strong{font-size:18px}.eco-sub{padding:18px}}
+</style>
+</head>
+<body>
+<a id="top"></a>
+<section class="hero" id="hero"><div class="hero-leaves" aria-hidden="true"></div><div class="shell hero-inner hero-copy"><p class="eyebrow">2026 KU CAMPUSTOWN · AI NEST</p><h1><span>M3 산업 특화 × AI</span><br>에코푸드 분야 특화교육</h1><p>시장 데이터와 공식 통계를 근거로 에코푸드 분야의 미충족 니즈를 발굴하고, 사업 아이템을 구체화한 뒤 웹 MVP까지 구현하는 4시간 집중 과정</p><div class="hero-meta"><span class="pill">13:00–17:00 · 240분</span><span class="pill">팀 단위 2~4인</span><span class="pill">Claude · Artifacts · Claude Code</span></div><div class="hero-actions hero-nav-cta" aria-label="주요 섹션 이동"><a class="hero-nav-link curriculum" href="#curriculum-table"><span class="hero-nav-label"><span class="hero-nav-icon" aria-hidden="true">🌱</span>커리큘럼</span><span class="hero-nav-arrow" aria-hidden="true">→</span></a><a class="hero-nav-link lecture" href="#lecture"><span class="hero-nav-label"><span class="hero-nav-icon" aria-hidden="true">📚</span>강의교안</span><span class="hero-nav-arrow" aria-hidden="true">→</span></a></div></div><div class="hero-visual eco-visual" id="heroVisual" aria-label="에코푸드 비주얼"><div class="eco-card eco-main" data-depth="1"><span class="eco-icon">🥗</span><strong>LOCAL &amp; SUSTAINABLE</strong><small>지역의 식재료를 더 가치 있게</small></div><div class="eco-card eco-sub eco-market" data-depth="2"><span>🌾</span><b>로컬푸드</b><small>생산자와 소비자의 연결</small></div><div class="eco-card eco-sub eco-zero" data-depth="3"><span>♻️</span><b>제로웨이스트</b><small>낭비 없는 푸드 시스템</small></div></div></section>
+<nav class="float-nav" aria-label="페이지 빠른 이동"><a href="#curriculum-table" aria-label="커리큘럼"><span class="tip">커리큘럼</span><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18M8 14h2M14 14h2M8 18h2M14 18h2"/></svg></a><a href="#lecture" aria-label="강의교안"><span class="tip">강의교안</span><svg viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6z"/><path d="M15 3v4h4M9 12h6M9 16h6"/></svg></a></nav>
+<main>
+<section class="section" id="curriculum"><div class="shell"><div class="section-head"><div><p class="kicker">CURRICULUM</p><h2>커리큘럼</h2></div></div>
+<div class="card overview"><div class="overview-grid"><div class="info"><b>교육 목표</b><span>시장 데이터와 공식 통계를 근거로 에코푸드 분야의 미충족 니즈를 발굴하고, 사업 아이템을 구체화한 뒤 웹 MVP까지 구현할 것</span></div><div class="info"><b>교육 시간</b><span>13:00–17:00 총 240분</span></div><div class="info"><b>진행 방식</b><span>전 과정을 팀 단위(2~4인)로 진행하며, 프롬프트 실행·검토·의사결정을 팀원이 나누어 맡을 것</span></div><div class="info"><b>활용 도구</b><span>Claude(리서치·분석·기획), Claude Artifacts(프로토타이핑), Claude Code(웹 MVP 구현), Google Sheets·Apps Script(검증 데이터 저장)</span></div><div class="info wide output-wrap"><b>산출물 구분</b><div class="output-cards"><div class="output-card"><span class="output-label">중간 작업물</span><strong>시장자료 · 경쟁사표 · 문제 후보 · 프롬프트 결과</strong></div><div class="output-card"><span class="output-label">필수 의사결정 결과</span><strong>핵심 문제 1개 · 최종 아이템 1개 · 가치제안 · MVP 가설 1개</strong></div><div class="output-card final"><span class="output-label">최종 제출</span><strong>사업계획 핵심안 · PRD · MVP URL · 검증 데이터</strong></div></div></div></div></div>
+<div class="note">⚠️ 정해진 시간이 있는 만큼 효율적으로 빠르게 진행하겠습니다. 먼저 인터넷 속도를 확인해주시고, 팀별로 가장 먼저 결과를 도출한 분이 팀내 결과를 공유하면서 단계별로 진행해 보도록 하겠습니다.</div>
+<div class="card schedule" id="curriculum-table"><div class="table-wrap"><table class="data-table curriculum-table"><colgroup><col class="col-time"><col class="col-duration"><col class="col-stage"><col class="col-work"></colgroup><thead><tr><th>시간</th><th>소요</th><th>구성</th><th>작업 내용</th></tr></thead><tbody><tr><td>13:00–13:05</td><td>5분</td><td><b>오리엔테이션</b></td><td><ul class="task-list"><li>산출물 점검·팀 역할·진행 방식 확인</li></ul></td></tr><tr><td>13:05–14:05</td><td>60분</td><td><b>1. 시장·트렌드·경쟁사 분석</b></td><td><ul class="task-list"><li>아이디어·시장·트렌드 구조화</li><li>경쟁 비교 후 페인포인트 후보 도출</li></ul></td></tr><tr class="break-row"><td>14:05–14:10</td><td>5분</td><td><b>휴식</b></td><td></td></tr><tr><td>14:10–14:55</td><td>45분</td><td><b>2. 공식데이터 기반 고객 니즈·페인포인트 검증</b></td><td><ul class="task-list"><li>페인포인트 후보를 공식데이터로 검증</li><li>문제 규모·대상 고객·손실 근거 정리</li></ul></td></tr><tr><td>14:55–15:15</td><td>20분</td><td><b>3. 최종 아이템 확정·가치제안</b></td><td><ul class="task-list"><li>핵심 페인포인트·최종 아이템 확정</li><li>고객·해결방식·가치제안 정리</li></ul></td></tr><tr class="break-row"><td>15:15–15:20</td><td>5분</td><td><b>휴식</b></td><td></td></tr><tr><td>15:20–15:55</td><td>35분</td><td><b>4. 사업계획서 핵심항목·초안 작성</b></td><td><ul class="task-list"><li>사업계획서 핵심항목 정리</li><li>1페이지 초안 작성</li></ul></td></tr><tr><td>15:55–16:20</td><td>25분</td><td><b>5.1 MVP 범위·유저 플로우·AI 역할 정의</b></td><td><ul class="task-list"><li>MVP 검증 가설·핵심 기능 3개 정의</li><li>AI 역할·유저 플로우 정리</li></ul></td></tr><tr class="break-row"><td>16:20–16:25</td><td>5분</td><td><b>휴식</b></td><td></td></tr><tr><td>16:25–16:50</td><td>25분</td><td><b>5.2~5.3 AI 포함 MVP PRD·웹 MVP 구현</b></td><td><ul class="task-list"><li>PRD 정리</li><li>웹 MVP 구현, 필요 시 Google Sheets 연동</li></ul></td></tr><tr><td>16:50–17:00</td><td>10분</td><td><b>6. 최종 산출물 정리·제출</b></td><td><ul class="task-list"><li>사업계획서·MVP·검증 결과 제출 패키지 정리</li><li>핵심 내용 일치 및 링크 작동 최종 확인</li></ul></td></tr></tbody></table></div></div>
+<details><summary>[참고] 커리큘럼별 체크 사항</summary><div class="details-body"><h4>1. 시장·트렌드·경쟁사 분석</h4><ul><li>에코푸드 시장의 현황과 주요 트렌드를 공식자료와 신뢰 가능한 자료를 통해 확인할 것</li><li>경쟁 서비스의 고객, 핵심 기능, 가격, 강점, 약점을 동일 기준으로 비교할 것</li><li>단순히 시장이 큰 분야가 아니라 해결되지 않은 문제가 존재하는 영역을 탐색할 것</li></ul><h4>2. 공식데이터 기반 고객 니즈·페인포인트 검증</h4><ul><li>통계청, 농림축산식품부, 관련 공공기관의 자료를 우선 활용할 것</li><li>개인 경험이나 추측보다 반복적으로 관찰되는 불편과 미충족 니즈를 근거로 사용할 것</li><li>발견한 문제마다 출처, 수치, 조사연도, 대상 집단을 함께 기록할 것</li></ul><h4>3. 최종 아이템 확정·가치제안</h4><ul><li>앞 단계에서 공식데이터로 검증한 최종 핵심 페인포인트 1개를 기준으로 최종 아이템을 구체화할 것</li><li>핵심 고객과 사용 상황을 유지한 상태에서 핵심 해결방식과 최종 사업 아이템 1개를 확정할 것</li><li>최종 아이템이 고객에게 제공하는 결과를 한 문장의 가치제안으로 표현할 것</li></ul><h4>4. 사업계획서 핵심항목·초안 작성</h4><ul><li>문제, 솔루션, 타겟, 비즈니스모델을 하나의 논리 흐름으로 연결할 것</li><li>주장마다 데이터 근거 또는 고객 근거를 배치할 것</li></ul><h4>5. AI 기반 서비스 콘셉트·웹 MVP 구현</h4><ul><li>사업계획서의 전체 내용을 그대로 구현하지 말고 핵심 가설 검증에 필요한 MVP 범위와 유저 플로우를 먼저 확정할 것</li><li>핵심 기능 중 AI가 실제 고객문제 해결에 담당할 역할을 1개 이상 정의하고 AI 입력·처리·출력 구조를 PRD에 포함할 것</li><li>PRD를 기준으로 AI 기능이 실제 작동하는 웹 MVP를 구현하고, 사용자 데이터 수집이 필요한 경우 Google Sheets 연동은 선택적으로 적용할 것</li></ul><h4>6. 최종 산출물 정리·제출</h4><ul><li>1~5단계 산출물을 최종 사업 아이템 하나의 흐름으로 연결해 정리할 것</li><li>사업계획서, AI 기반 웹 MVP, 주요 근거와 검증 결과를 하나의 제출 패키지로 구성할 것</li><li>Google Sheets 검증 데이터는 데이터 수집 기능을 구현한 경우 선택 제출할 것</li><li>타겟 고객·핵심 문제·가치제안·MVP 검증 가설이 서로 일치하고 MVP 링크가 실제로 작동하는지 최종 확인할 것</li><li>Google Sheets를 연동한 경우에만 데이터 저장 작동 여부를 추가 확인할 것</li></ul></div></details>
+</div></section>
+<section class="section" id="lecture"><div class="shell"><div class="section-head"><div><p class="kicker">LECTURE NOTE</p><h2>🕙 상세 교육 강의교안</h2></div></div><nav class="lecture-nav"><a href="#l1">1. 시장·경쟁</a><a href="#l2">2. 페인포인트</a><a href="#l3">3. 아이템·가치</a><a href="#l4">4. 사업계획서</a><a href="#l5">5. MVP</a><a href="#l6">6. 제출</a></nav>
+<article class="card lesson" id="l1"><span class="lesson-num">1</span><h3>시장·트렌드·경쟁사 분석</h3><div class="subsection"><h4>1.1 아이디어·시장 구조화</h4><ul><li>공통과정에서 정리한 아이디어를 검증 대상으로 사용할 것</li><li>시장 규모보다 고객문제와 최근 시장 트렌드를 먼저 확인할 것</li><li>아이디어가 속한 에코푸드 세부시장과 직접·간접 경쟁환경을 함께 조사할 것</li><li>분석 결과에서 다음 단계에 검증할 페인포인트와 미충족 니즈 후보를 도출할 것</li><li>새로운 아이디어를 다시 만들지 말고 공통과정에서 정리한 아이디어 2~3개를 준비할 것</li><li>각 아이디어를 그대로 조사하지 말고 [<b>핵심 고객 → 사용 상황 → 해결하려는 문제 → 제공하려는 해결방법</b>] 순서로 먼저 구조화할 것<ul><li>핵심 고객: 누가 이 문제를 가장 크게 경험하는지 정의</li><li>사용 상황: 고객이 언제, 어떤 상황에서 문제를 경험하는지 정의</li><li>해결하려는 문제: 고객이 현재 겪는 불편·비용·시간 손실을 구체적으로 정의</li><li>해결방법: 해당 문제를 어떤 서비스 또는 기능으로 해결하려는지 한 문장으로 정리</li></ul></li><li>구조화한 결과를 Claude에 입력한 뒤 각 아이디어가 어떤 에코푸드 세부시장에 속하는지 분류하도록 할 것</li><li>하나의 아이디어가 여러 시장에 걸쳐 있는 경우 핵심 고객문제가 실제로 발생하는 시장을 1차 조사시장으로 선정할 것</li><li>아직 아이디어가 구체적이지 않은 경우 아래 세부시장 예시를 참고해 가장 가까운 영역을 선택한 뒤 구조화를 진행할 것</li></ul>
+<details><summary>[참고] 공통과정 아이디어 예시</summary><div class="details-body"><ul><li>식품의 친환경 인증·성분·원산지 정보를 한곳에서 확인하고 비교하도록 안내하는 서비스</li><li>유통기한 임박·잉여 식재료 처리에 어려움을 겪는 소비자에게 레시피와 소비 방법을 연결하는 서비스</li><li>로컬푸드·제로웨이스트 매장과 정기배송·픽업 장소를 한곳에서 찾고 비교할 수 있는 서비스</li></ul></div></details><details><summary>[참고] 에코푸드 분야 세부시장 예시</summary><div class="details-body"><ul><li>친환경 원재료·소싱</li><li>대체식품·대체단백질</li><li>로컬푸드·직거래</li><li>제로웨이스트·푸드업사이클링</li><li>친환경 포장·유통</li><li>비건·플랜트베이스</li><li>친환경 급식·단체급식</li><li>친환경 인증·품질관리</li><li>푸드테크·데이터·AI</li><li>에코푸드 리테일·커머스</li><li>에코푸드 콘텐츠·커뮤니티</li><li>에코푸드 B2B·사업자 솔루션</li></ul></div></details>
+<div class="prompt-block"><div class="prompt-head"><span>markdown · Claude 입력 프롬프트</span><button class="copy-btn">복사</button></div><pre><code>공통과정 아이디어를 고객문제와 시장 기준으로 구조화해줘
 
+# 입력 아이디어
+나는 아래와 같은 에코푸드 분야 사업 아이디어를 정리했어
+
+[아이디어 1]
+[아이디어 2] 
+
+각 아이디어를 아래 순서로 구조화해줘
+1 핵심 고객
+2 사용 상황
+3 해결하려는 문제
+4 제공하려는 해결방법
+
+아래 에코푸드 세부시장 분류는 참고용이야
+[참고용 세부 시장 삽입]
+
+각 아이디어의 핵심 고객, 문제, 구매·이용 상황을 기준으로 가장 적절한 세부시장을 판단해줘
+위 분류에 정확히 맞지 않는 경우 억지로 포함하지 말고 더 적절한 세부시장명을 새롭게 제안해줘
+하나의 아이디어가 여러 시장에 걸쳐 있다면 핵심 고객문제가 실제로 발생하는 영역을 1차 조사시장으로 정하고 함께 관련되는 영역은 보조시장으로 표시해줘
+
+마지막에는 아래 형식으로 정리해줘
+왼쪽 열은 '항목', 오른쪽 열은 '내용'으로 구성된 2열 표로 각각 정리해줘
+
+| 항목 | 내용 |
+|---|---|
+| 아이디어 | 아이디어 내용 |
+| 핵심 고객 | 핵심 고객 |
+| 사용 상황 | 주요 사용 상황 |
+| 해결하려는 문제 | 고객이 겪는 구체적인 문제 |
+| 제공하려는 해결방법 | 문제를 해결하는 서비스 방식 |
+| 1차 조사시장 | 가장 핵심적인 세부시장 |
+| 보조시장 | 함께 관련되는 세부시장 |
+| 시장 분류 이유 | 1차 조사시장과 보조시장으로 판단한 이유 |
+
+아이디어가 2개 이상인 경우 아이디어별로 표를 각각 하나씩 만들어줘
+내용은 짧고 구체적으로 작성해줘
+
+# 다음 단계 복사용 요약
+마지막에는 다음 시장조사 단계에 그대로 복사할 수 있도록 아래 6개 항목만 다시 정리해줘
+
+| 항목 | 내용 |
+|---|---|
+| 아이디어 | 최종 조사할 아이디어 |
+| 핵심 고객 | 핵심 고객 |
+| 사용 상황 | 주요 사용 상황 |
+| 해결하려는 문제 | 고객의 핵심 문제 |
+| 1차 조사시장 | 최종 1차 조사시장 |
+| 보조시장 | 필요한 경우 보조시장 |</code></pre></div>
+<h4>데이터 검증</h4><ul><li>핵심 고객이 너무 넓거나 막연하게 정의되지 않았는지 확인할 것</li><li>사용 상황이 실제로 문제가 발생하는 구체적인 시점·맥락으로 작성되었는지 확인할 것</li><li>해결하려는 문제가 기능이나 서비스 아이디어가 아니라 고객의 불편·비용·시간 손실로 표현되었는지 확인할 것</li><li>제공하려는 해결방법이 해결하려는 문제와 직접 연결되는지 확인할 것</li><li>1차 조사시장이 핵심 고객문제가 실제로 발생하는 시장인지 확인할 것</li><li>보조시장이 단순 기술·채널 특성이 아니라 실제로 연결되는 인접시장인지 확인할 것</li><li>아이디어와 1차 조사시장의 연결이 불명확하면 다음 시장조사 전에 다시 정리할 것</li></ul><div class="output"><b>실습 결과물</b><ul><li>아이디어별 핵심 고객·사용 상황·해결 문제 구조화</li><li>아이디어별 1차 조사시장·보조시장 분류</li><li>최종 조사 아이디어 1개 선정</li><li>다음 단계 복사용 요약</li></ul></div></div>
+<div class="callout"><b>⚠️ Claude Research 실행 안내 ⚠️</b><br>Claude 새 대화창에서 Research 모드와 Web Search 활성화 상태 확인<ul><li>1.1에서 구조화한 아이디어와 1차 조사시장, 보조시장(옵션)을 조사 대상으로 사용할 것</li><li>조사 범위는 한 번에 넓게 잡지 않고 1차 조사시장 단위로 설정할 것</li><li>모든 조사 결과에서 출처 링크와 자료 기준연도를 함께 확보할 것</li><li><b>[참고] Claude Research가 너무 느릴 경우 다른 도구 활용하세요.</b></li></ul></div>
+<div class="subsection"><h4>1.2 시장·트렌드·기회영역 분석</h4><ul><li>앞 단계의 [다음 단계 복사용 요약] 전체를 그대로 입력할 것</li><li>입력된 1차 조사시장을 기준으로 현재 시장의 규모와 최근 3~5년 변화를 확인할 것</li><li>주요 고객군, 구매·이용 상황, 지출 항목, 주요 사업자와 최근 시장 트렌드를 함께 조사할 것</li><li>시장 데이터에서 반복적으로 나타나는 고객 불편과 미충족 니즈를 문제·기회영역 수준으로 정리할 것</li><li>이 단계에서는 구체적인 서비스 아이디어, 기능, 수익모델 또는 해결방법을 제안하지 않을 것</li><li>근거가 충분한 문제·기회영역 3개를 정리하고, 그중 1.3에서 경쟁분석할 기회영역 1개를 선정할 것</li></ul>
+<div class="prompt-block"><div class="prompt-head"><span>markdown · Claude 입력 프롬프트</span><button class="copy-btn">복사</button></div><pre><code>공식자료를 우선 사용해 시장 현황과 반복되는 고객문제·미충족 니즈를 분석해줘
+
+# 입력
+[앞 단계의 `다음 단계 복사용 요약` 붙여넣어]
+
+위 내용을 조사 기준으로 사용해줘
+시장 규모와 주요 분석 기준은 1차 조사시장을 중심으로 하고 보조시장은 직접 연결되는 내용이 있을 때만 참고해줘
+
+# 목표
+시장 현황과 주요 트렌드, 고객, 지출 구조, 주요 사업자와 미충족 니즈를 파악해줘
+
+조사 목적은 구체적인 사업 아이템을 만드는 것이 아니라 이후, 경쟁환경을 분석할 문제·기회영역을 선정하는 것이야
+
+다음 순서로 조사해줘
+
+1 한국 시장의 현재 규모와 최근 3~5년 변화
+2 주요 성장 요인과 감소 요인
+3 주요 고객군과 구매 상황
+4 고객이 현재 비용을 지불하고 있는 항목
+5 국내 주요 서비스 또는 기업 5개 이상
+6 최근 새롭게 등장하는 서비스 유형
+7 아직 해결되지 않은 고객 불편 또는 미충족 니즈 후보
+
+자료 기준
+- 최근 자료 우선 사용
+- 정부기관, 공공기관, 기업 공식자료, 신뢰도 높은 리서치 자료 우선 사용
+- 수치마다 조사연도와 출처 링크 표시
+- 확인되지 않은 시장규모를 임의로 추정하지 말 것
+- 국내 자료와 해외 자료를 구분할 것
+
+# 통합 분석
+조사 결과를 다음 3개 관점으로 연결해서 분석해줘
+
+## 1 시장 현황과 트렌드
+- 현재 시장 규모와 최근 3~5년 변화
+- 주요 고객군과 구매·이용 상황
+- 고객이 현재 비용을 지불하는 항목
+- 국내 주요 서비스 또는 기업
+
+## 2 트렌드 형성 원인
+- 인구·가구구조 변화
+- 소비자 건강·환경 인식 변화
+- 소비행태와 라이프스타일 변화
+- 기술·플랫폼 환경 변화
+- 제도·산업환경 변화
+- 각 원인이 시장 트렌드와 연결되는 이유
+
+## 3 문제·기회영역과 미충족 니즈
+다음 조건을 중심으로 문제·기회영역을 찾아줘
+- 고객의 불편이 반복적으로 발생함
+- 고객이 이미 비용이나 시간을 사용하고 있음
+- 공식자료 또는 신뢰도 높은 자료로 문제의 존재를 설명할 수 있음
+- 특정 고객군에서 문제가 더 크게 나타남
+
+문제·기회영역은 3개만 제안해줘.각 영역은 해결방법이나 서비스 아이디어가 아니라 `누가 어떤 상황에서 어떤 문제를 겪는가` 수준으로 정의해줘
+
+3개 중 근거가 가장 명확하고 1.1의 핵심 고객·해결 문제와 연결성이 높은 경쟁분석 대상 기회영역 1개를 선정하고 사유도 설명해줘. 
+
+# 출력 형식
+
+조사 결과는 아래와 같이 왼쪽 열은 `항목` 오른쪽 열은 `내용`으로 구성된 2열 표로 정리해줘
+
+| 항목 | 내용 |
+|---|---|
+| 시장 규모 | 현재 시장 규모와 최근 3~5년 변화 |
+| 시장 트렌드 | 주요 시장 변화와 최근 트렌드 |
+| 트렌드 원인 | 인구·가구구조, 소비행태, 기술, 제도·산업환경 등 주요 원인 |
+| 주요 고객 | 핵심 고객군과 구매·이용 상황 |
+| 주요 지출 | 고객이 현재 비용을 지불하고 있는 항목 |
+| 주요 사업자 | 국내 주요 서비스 또는 기업 |
+| 미충족 니즈 | 아직 충분히 해결되지 않은 고객 불편 |
+| 근거 출처 | 조사연도와 출처 링크 |
+
+문제·기회영역 3개는 각각 아래 2열 표로 정리해줘
+
+| 항목 | 내용 |
+|---|---|
+| 문제·기회영역 | 해결방법이 아닌 문제영역 이름 |
+| 핵심 고객 | 해당 문제를 주로 경험하는 고객 |
+| 발생 상황 | 문제가 발생하는 구체적인 상황 |
+| 고객 문제 | 반복적으로 발생하는 불편 또는 손실 |
+| 시장 근거 | 문제의 존재를 보여주는 핵심 수치·변화 |
+| 근거 출처 | 조사연도와 출처 링크 |
+
+# 다음 단계 복사용 요약
+마지막에는 경쟁사 분석 단계에 그대로 복사할 수 있도록 아래 6개 항목만 다시 정리해줘
+
+| 항목 | 내용 |
+|---|---|
+| 아이디어 | 현재 조사 중인 아이디어 |
+| 핵심 고객 | 경쟁분석에서 사용할 핵심 고객 |
+| 사용 상황 | 문제가 발생하는 주요 상황 |
+| 해결하려는 문제 | 경쟁분석의 기준이 되는 고객 문제 |
+| 1차 조사시장 | 경쟁사를 찾을 기준 시장 |
+| 경쟁분석 대상 기회영역 | 3개 중 최종 선정한 문제·기회영역 1개 |
+
+구체적인 서비스 아이디어, 기능, 수익모델, AI 활용방식, MVP 제안은 하지 말아줘
+근거가 약한 내용은 `추정` 또는 `확인 필요`로 표시해줘</code></pre></div>
+<h4>시장·트렌드·기회 데이터 검증</h4><ul><li>시장 규모가 실제 에코푸드 산업 전체인지 선택한 세부시장 규모인지 확인할 것</li><li>전망치와 실제 조사값을 구분할 것</li><li>동일 수치가 여러 기사에서 반복 인용될 경우 최초 출처까지 확인할 것</li><li>조사연도가 오래된 자료는 현재 시장 근거가 아닌 시장 트렌드 참고자료로 사용할 것</li><li>해외 시장 수치를 국내 시장 규모처럼 사용하지 않을 것</li><li>출처 링크를 직접 열어 수치와 문맥이 일치하는지 확인할 것</li></ul><div class="output"><b>실습 결과물</b><ul><li>시장 규모·트렌드·주요 고객·지출 구조 조사</li><li>문제·기회영역 3개 도출</li><li>경쟁분석 대상 기회영역 1개 선정</li><li>다음 단계 복사용 요약</li></ul></div></div>
+<div class="subsection"><h4>1.3 경쟁사 분석</h4><ul><li>앞 단계의 [다음 단계 복사용 요약] 전체를 그대로 입력할 것</li><li>입력된 아이디어, 핵심 고객, 사용 상황, 해결 문제, 1차 조사시장, 경쟁분석 대상 기회영역을 기준으로 분석할 것</li><li>직접경쟁, 간접경쟁, 비소비 대안을 함께 확인할 것</li><li>비교 가치가 높은 경쟁 대안 3~5개를 고객, 해결 문제, 기능·방식, 가격·비용, 강점, 반복 불편 기준으로 비교할 것</li><li>비교 결과에서 반복 고객 불편 3개와 기존 대안의 구조적 한계를 정리하고, 다음 단계에서 검증할 페인포인트 후보 3개를 도출할 것</li><li>이 단계에서는 최종 서비스 아이디어나 해결방법을 확정하지 않을 것</li></ul>
+<div class="prompt-block"><div class="prompt-head"><span>markdown · Claude 입력 프롬프트</span><button class="copy-btn">복사</button></div><pre><code>동일 업종뿐 아니라 고객이 같은 문제를 해결하기 위해 사용하는 대안까지 포함해 경쟁환경을 분석해줘
+
+# 입력
+[앞 단계의 `다음 단계 복사용 요약` 붙여넣어]
+
+위 내용을 경쟁분석 기준으로 사용해줘
+경쟁분석 대상 기회영역을 중심으로 조사하되 핵심 고객과 해결하려는 문제에서 벗어나는 경쟁 대안은 제외해줘
+
+# 목표
+고객이 같은 문제를 해결하기 위해 사용하는 직접경쟁, 간접경쟁, 비소비 대안을 함께 조사해줘
+
+경쟁 유형은 아래 기준으로 구분해줘
+- 직접경쟁: 같은 고객의 같은 문제를 유사한 방식으로 해결하는 서비스
+- 간접경쟁: 같은 문제를 다른 방식으로 해결하는 서비스 또는 제품
+- 비소비 대안: 서비스를 이용하지 않고 고객이 직접 해결하거나 참고 버티는 방식
+
+국내 경쟁 대안 중 비교 가치가 높은 3~5개를 선정하고 아래 기준으로 비교해줘
+- 주요 고객
+- 해결 문제
+- 핵심 기능 또는 해결 방식
+- 가격 또는 비용
+- 강점
+- 반복되는 고객 불편
+
+비교 결과에서 반복 고객 불편 3개와 기존 대안의 구조적 한계를 정리해줘
+그 결과를 바탕으로 다음 단계에서 공식데이터로 검증할 페인포인트 후보 3개를 도출해줘
+
+새로운 서비스 기능이나 해결방법을 제안하지 말아줘
+
+공식 홈페이지, 앱스토어, 가격 페이지, FAQ, 공개된 후기와 기사 등 확인 가능한 자료를 사용하고 각 결과에 근거 링크를 표시해줘. 확인되지 않은 내용은 추정하지 말고 `확인 필요`로 표시해줘
+
+# 출력 형식
+결과는 모두 왼쪽 열은 `항목`, 오른쪽 열은 `내용`으로 구성된 2열 표로 정리해줘
+
+경쟁 대안별로 아래 표를 각각 작성해줘
+
+| 항목 | 내용 |
+|---|---|
+| 서비스·대안명 | 경쟁 서비스 또는 대안 |
+| 경쟁 유형 | 직접경쟁, 간접경쟁, 비소비 대안 중 구분 |
+| 주요 고객 | 핵심 이용 고객 |
+| 해결 문제 | 고객이 해결하려는 문제 |
+| 핵심 기능·방식 | 핵심 기능 또는 문제 해결 방식 |
+| 가격·비용 | 고객이 지불하는 가격 또는 비용 |
+| 강점 | 고객이 선택하는 이유 |
+| 반복 불편 | 반복적으로 확인되는 고객 불편 |
+| 근거 출처 | 확인에 사용한 링크 |
+
+이후 반복 고객 불편 3개를 아래 표로 정리해줘
+
+| 항목 | 내용 |
+|---|---|
+| 반복 고객 불편 | 반복적으로 나타나는 문제 |
+| 발생 상황 | 문제가 발생하는 상황 |
+| 관련 경쟁 대안 | 해당 문제가 나타나는 경쟁 서비스 또는 대안 |
+| 고객 손실 | 비용, 시간, 불안 등 고객에게 발생하는 손실 |
+| 근거 출처 | 판단 근거 링크 |
+
+반복 고객 불편 3개를 정리한 뒤, 각 불편이 왜 기존 대안에서 반복되는지 구조적 한계를 함께 설명해줘
+
+마지막에는 다음 단계에서 공식데이터로 검증할 페인포인트 후보 3개를 정리해줘
+
+| 항목 | 내용 |
+|---|---|
+| 페인포인트 후보 | 공식데이터로 검증할 구체적인 고객 문제 |
+| 대상 고객 | 문제를 경험하는 고객 |
+| 발생 상황 | 문제가 나타나는 구체적인 상황 |
+| 현재 손실 | 비용·시간·불안·포기 등 고객 손실 |
+| 도출 근거 | 어떤 반복 불편과 구조적 한계에서 도출했는지 |
+| 추가 검증 필요 | 다음 단계에서 확인할 공식데이터 또는 수치 |
+
+# 다음 단계 복사용 요약
+마지막에는 공식데이터 검증 단계에 그대로 복사할 수 있도록 아래 항목만 다시 정리해줘
+
+| 항목 | 내용 |
+|---|---|
+| 아이디어 | 현재 조사 중인 아이디어 |
+| 핵심 고객 | 경쟁분석에서 사용한 핵심 고객 |
+| 1차 조사시장 | 경쟁사를 찾은 기준 시장 |
+| 경쟁분석 대상 기회영역 | 앞 단계에서 선정한 문제·기회영역 |
+| 페인포인트 후보 | 공식데이터로 검증할 페인포인트 후보 3개 |
+| 추가 검증 필요 | 다음 단계에서 확인할 공식데이터 또는 수치 |</code></pre></div>
+<h4>경쟁사 데이터 검증</h4><ul><li>경쟁 대안이 실제로 현재 운영 중인 서비스·제품·고객 행동인지 확인할 것</li><li>서비스명, 핵심 기능, 가격·비용은 공식 홈페이지·앱스토어·가격 페이지 등 1차 출처를 우선 확인할 것</li><li>직접경쟁·간접경쟁·비소비 대안의 구분이 같은 고객의 같은 문제를 기준으로 이루어졌는지 확인할 것</li><li>고객 불편은 단일 후기 한 건이 아니라 여러 후기·FAQ·기사 등에서 반복적으로 확인되는지 확인할 것</li><li>기존 대안의 구조적 한계가 단순한 기능 부족이 아니라 여러 경쟁 대안에서 반복되는 공통 한계인지 확인할 것</li><li>페인포인트 후보가 새로운 서비스 아이디어가 아니라 [누가 어떤 상황에서 어떤 문제를 겪는가] 수준으로 작성되었는지 확인할 것</li><li>확인되지 않은 가격·기능·운영 여부·고객 불편은 추정하지 말고 [확인 필요]로 표시할 것</li></ul><div class="output"><b>실습 결과물</b><ul><li>경쟁 대안 3~5개 비교</li><li>반복 고객 불편 3개 정리</li><li>기존 대안의 구조적 한계 3개 정리</li><li>공식데이터로 검증할 페인포인트 후보 3개 도출</li><li>다음 단계 복사용 요약</li></ul></div>
+<details><summary>추가 확인이 필요한 경우만 사용</summary><div class="details-body"><p>통합 경쟁사 분석 결과에서 가격, 기능, 고객 불편, 운영 여부 등의 근거가 부족하거나 [확인 필요]로 표시된 항목이 있을 때만 사용할 것</p><div class="prompt-block"><div class="prompt-head"><span>markdown</span><button class="copy-btn">복사</button></div><pre><code>추가 확인이 필요한 경쟁 서비스의 사실관계를 검증해줘
+
+# 조사 대상
+추가 확인이 필요한 경쟁 서비스
+[서비스명과 URL]
+
+확인이 필요한 항목
+[가격 / 기능 / 고객 불편 / 운영 여부 / 기타]
+
+# 목표
+통합 경쟁사 분석에서 근거가 부족하거나 확인되지 않은 항목만 추가 조사해줘
+
+공식 홈페이지, 가격 페이지, 앱스토어·플레이스토어, FAQ, 이용약관, 고객 리뷰 등 확인 가능한 자료를 우선 사용해줘
+
+확인되지 않은 내용은 추정하지 말고 `확인 필요`로 표시해줘
+
+# 출력 형식
+
+| 항목 | 내용 |
+|---|---|
+| 서비스명 | 경쟁 서비스명 |
+| 확인 항목 | 추가 확인한 항목 |
+| 확인 결과 | 조사 결과 |
+| 고객 불편 | 확인된 반복 고객 불편 |
+| 근거 출처 | 확인에 사용한 링크 |</code></pre></div></div></details></div></article>
+<article class="card lesson" id="l2"><span class="lesson-num">2</span><h3>공식데이터 기반 고객 니즈·페인포인트 검증</h3><ul><li>앞 단계의 [다음 단계 복사용 요약] 전체를 그대로 입력할 것</li><li>입력된 페인포인트 후보 3개를 검증 대상으로 사용할 것</li><li>새로운 페인포인트를 다시 발굴하지 않고 각 후보의 존재 여부, 문제 규모, 빈도, 영향받는 고객, 비용·시간·불안 등 손실을 공식데이터로 확인할 것</li><li>후보마다 문제의 존재와 크기를 설명할 수 있는 공식통계 또는 공공데이터를 찾을 것</li><li>공식데이터의 연령·대상 기준이 앞 단계의 핵심 고객 정의와 다르면, 근거가 더 명확한 기준으로 핵심 고객을 보정하고 변경 이유를 함께 명시할 것</li><li>노령견 여부를 특정 연령 하나로 단정하지 말고, 수의학적 생애주기 기준과 실제 조사 데이터의 연령 구간을 구분하여 사용할 것</li><li>직접 일치하는 통계가 없으면 유사 수치를 억지로 연결하지 말고 [직접 근거 없음] 또는 [추가 검증 필요]로 표시할 것</li><li>각 후보의 근거와 출처를 비교한 뒤 팀이 각 후보를 <b>채택 / 보류 / 제외</b>로 판단하고 이유를 기록할 것</li><li>데이터 근거와 팀 판단을 함께 검토해 최종 핵심 페인포인트 1개를 선정할 것</li></ul>
+<div class="prompt-block"><div class="prompt-head"><span>markdown · Claude 입력 프롬프트</span><button class="copy-btn">복사</button></div><pre><code>새로운 문제를 만들지 말고 입력된 페인포인트 후보가 공식데이터에서도 확인되는지 검증해줘
+
+# 입력
+[앞 단계에서 도출한 페인포인트 후보 3개 붙여넣어]
+
+# 목표
+각 페인포인트 후보별로 아래 내용을 확인해줘
+1 문제의 존재를 보여주는 공식데이터가 있는지
+2 문제를 경험하는 고객 규모 또는 비율
+3 문제의 발생 빈도 또는 이용·미이용 정도
+4 고객에게 발생하는 비용·시간·불안·포기 등 손실
+5 특정 고객군에서 문제가 더 크게 나타나는지
+6 최근 증가·감소 등 변화가 있는지
+
+# 자료 기준
+- KOSIS, 통계청, 농림축산식품부, 농림축산검역본부, 지자체 및 공공기관 자료 우선
+- 정부·공공기관 자료로 부족한 경우 공신력 있는 협회·연구기관 자료를 보조적으로 사용
+- 반려견의 노령·생애주기 기준은 수의학 전문 가이드라인을 별도로 확인하고, 특정 연령을 모든 반려견의 노령 기준으로 단정하지 말 것
+- 최근 자료를 우선 사용하고 조사연도와 출처 링크를 표시
+- 기사에서 재인용된 수치는 가능하면 원출처 확인
+- 국내 자료와 해외 자료를 구분
+- 조사 대상, 표본, 지역, 연령, 식품 소비 유형 등 수치의 조사범위를 함께 확인
+- 비율이나 증감률을 사용할 경우 무엇을 기준으로 계산한 수치인지 함께 확인
+- 실제 조사값과 전망치·예측값을 구분하고 전망치는 실제 현황 근거처럼 사용하지 말 것
+- 동일한 수치가 여러 자료에서 반복 인용되는 경우 서로 다른 근거로 중복 계산하지 말 것
+- 자료의 수치가 해당 페인포인트를 직접 설명하는지 확인하고 단순한 시장 성장 수치를 문제의 근거로 사용하지 말 것
+- 직접 근거가 없는 경우 유사 수치를 억지로 연결하지 말고 `직접 근거 없음` 또는 `추가 검증 필요`로 표시
+
+# 검증 방법
+페인포인트 후보 3개를 각각 아래 기준으로 검증해줘
+- 존재 근거: 실제로 이 문제가 존재한다고 볼 수 있는가
+- 문제 규모: 영향을 받는 고객 수·비율·이용률 등으로 설명 가능한가
+- 문제 강도: 비용·시간·불안·포기 등 손실이 큰가
+- 고객 집중도: 특정 고객군에서 더 크게 나타나는가
+- 추세: 최근 증가·감소 또는 구조적 변화가 있는가
+
+# 출력 형식
+페인포인트 후보 3개를 각각 아래 2열 표로 정리해줘
+
+| 항목 | 내용 |
+|---|---|
+| 페인포인트 후보 | 검증 대상 고객 문제 |
+| 대상 고객 | 문제를 경험하는 고객 |
+| 존재 근거 | 문제의 존재를 보여주는 핵심 데이터 |
+| 문제 규모 | 고객 수·비율·이용률 등 확인 가능한 수치 |
+| 문제 강도 | 비용·시간·불안·포기 등 확인 가능한 손실 |
+| 고객 집중도 | 문제가 더 크게 나타나는 고객군 |
+| 최근 추세 | 증가·감소 또는 구조적 변화 |
+| 검증 판단 | 강함 / 보통 / 약함 / 확인 필요 |
+| 근거 출처 | 조사연도와 출처 링크 |
+
+3개 후보를 비교한 뒤 아래 기준으로 최종 핵심 페인포인트 1개를 선정해줘
+앞 단계의 핵심 고객 연령·대상 기준과 공식데이터 기준이 다르면, 공식데이터 근거가 더 명확한 기준으로 핵심 고객 정의를 보정하고 어떤 기준에서 어떻게 바뀌었는지 함께 설명해줘
+- 공식데이터 근거가 가장 명확함
+- 문제 규모 또는 영향이 충분히 확인됨
+- 특정 핵심 고객과의 연결이 명확함
+- 앞 단계 경쟁분석에서 확인한 반복 불편·구조적 한계와 연결됨
+
+최종 선정 결과는 아래 표로 정리해줘
+
+| 항목 | 내용 |
+|---|---|
+| 최종 핵심 페인포인트 | 공식데이터 검증을 통과한 핵심 고객 문제 1개 |
+| 핵심 고객 | 문제를 가장 크게 경험하는 고객 |
+| 고객 정의 보정 | 앞 단계 고객 정의가 데이터 검증 후 어떻게 달라졌는지와 보정 이유 |
+| 발생 상황 | 문제가 발생하는 주요 상황 |
+| 핵심 손실 | 비용·시간·불안·포기 등 주요 손실 |
+| 핵심 데이터 | 선정 판단에 사용한 핵심 수치 |
+| 경쟁분석 연결 | 앞 단계의 반복 불편·구조적 한계와 연결되는 이유 |
+| 선정 이유 | 다른 후보보다 우선하는 이유 |
+| 근거 출처 | 핵심 출처와 조사연도 |
+
+# 다음 단계 복사용 요약
+마지막에는 최종 아이템 확정 단계에 그대로 복사할 수 있도록 아래 항목만 다시 정리해줘
+
+| 항목 | 내용 |
+|---|---|
+| 아이디어 | 현재 검토 중인 아이디어 |
+| 핵심 고객 | 최종 핵심 고객 |
+| 고객 정의 보정 | 데이터 검증에 따라 변경된 고객 기준과 변경 이유 |
+| 사용 상황 | 문제가 발생하는 주요 상황 |
+| 1차 조사시장 | 현재 검토 중인 1차 조사시장 |
+| 최종 핵심 페인포인트 | 공식데이터로 검증된 핵심 문제 1개 |
+| 핵심 손실 | 고객에게 발생하는 핵심 손실 |
+| 경쟁분석 근거 | 반복 고객 불편과 기존 대안의 구조적 한계 |
+| 공식데이터 근거 | 핵심 수치와 조사연도 |
+| 근거 출처 | 최종 판단에 사용한 핵심 출처 |
+
+새로운 서비스 아이디어, 기능, 수익모델, MVP는 제안하지 말아줘
+최종 아이템은 다음 단계에서 확정할 것이므로 여기서는 문제 검증과 핵심 페인포인트 선정까지만 수행해줘</code></pre></div>
+<h4>고객 니즈·페인포인트 검증</h4><ul><li>페인포인트 후보 3개가 앞 단계에서 도출한 동일한 고객문제인지 확인할 것</li><li>각 후보마다 문제 존재 여부를 직접 설명하는 공식데이터가 있는지 확인할 것</li><li>문제 규모·빈도·영향 고객·비용·시간·불안 등 손실이 실제 수치로 확인되는지 확인할 것</li><li>조사연도, 조사대상, 지역, 표본 등 수치의 적용 범위를 함께 확인할 것</li><li>단순 시장 성장 수치가 아니라 해당 페인포인트를 직접 설명하는 근거인지 확인할 것</li><li>직접 근거가 부족한 후보는 [직접 근거 없음] 또는 [추가 검증 필요]로 표시할 것</li><li>3개 후보 중 공식데이터 근거가 가장 명확한 핵심 페인포인트 1개만 다음 단계로 넘길 것</li></ul><div class="output"><b>실습 결과물</b><ul><li>페인포인트 후보 3개 공식데이터 검증</li><li>후보별 핵심 수치·출처 정리</li><li>후보별 검증 결과 정리</li><li>후보별 팀 판단(채택 / 보류 / 제외)과 이유 기록</li><li>최종 핵심 페인포인트 1개 선정</li><li>다음 단계 복사용 요약</li></ul></div></article>
+<article class="card lesson" id="l3"><span class="lesson-num">3</span><h3>최종 아이템 확정·가치제안</h3><ul><li>앞 단계의 [다음 단계 복사용 요약] 전체를 그대로 입력할 것</li><li>공식데이터로 검증된 [최종 핵심 페인포인트 1개]를 기준으로 최종 아이템을 구체화할 것</li><li>새로운 문제를 다시 찾거나 여러 아이템을 점수평가하지 않을 것</li><li>핵심 고객, 사용 상황, 핵심 페인포인트, 경쟁분석 근거, 공식데이터 근거가 하나의 아이템으로 연결되도록 할 것</li><li>해결방법은 핵심 문제를 직접 해결하는 수준으로만 정의하고 기능을 과도하게 확장하지 않을 것</li><li>최종 아이템 1개와 가치제안 1문장을 확정할 것</li></ul>
+<div class="prompt-block"><div class="prompt-head"><span>markdown · Claude 입력 프롬프트</span><button class="copy-btn">복사</button></div><pre><code>검증된 고객문제와 근거를 바꾸지 말고 최종 아이템 1개와 가치제안으로 정리해줘
+
+# 입력
+[앞 단계의 `다음 단계 복사용 요약` 붙여넣어]
+
+# 목표
+입력된 최종 핵심 페인포인트를 기준으로 아래 내용을 확정해줘
+1 최종 핵심 고객
+2 문제가 발생하는 주요 사용 상황
+3 공식데이터로 검증된 핵심 페인포인트
+4 기존 대안의 구조적 한계
+5 고객에게 제공할 핵심 해결방식
+6 최종 사업 아이템 1개
+7 가치제안 1문장
+
+새로운 고객문제나 별도의 사업 아이템을 추가로 제안하지 말아줘
+입력된 공식데이터와 경쟁분석 근거에서 벗어나는 내용은 만들지 말아줘
+
+# 출력 형식
+결과는 왼쪽 열은 `항목`, 오른쪽 열은 `내용`으로 구성된 2열 표로 정리해줘
+
+| 항목 | 내용 |
+|---|---|
+| 핵심 고객 | 최종 아이템의 핵심 고객 |
+| 사용 상황 | 문제가 발생하는 주요 상황 |
+| 핵심 페인포인트 | 공식데이터로 검증된 핵심 문제 |
+| 핵심 손실 | 비용·시간·불안·포기 등 고객 손실 |
+| 기존 대안의 한계 | 경쟁분석에서 확인된 구조적 한계 |
+| 핵심 해결방식 | 문제를 해결하는 핵심 방식 |
+| 최종 아이템 | 최종 확정한 사업 아이템 1개 |
+| 가치제안 | 고객이 얻는 핵심 가치를 한 문장으로 표현 |
+| 핵심 근거 | 경쟁분석 근거와 공식데이터 핵심 수치·출처 |
+
+최종 아이템은 아래 형식을 참고해 한 문장으로 정리해줘
+`[핵심 고객]을 위해 [핵심 페인포인트]를 [핵심 해결방식]으로 해결하는 [서비스 유형]`
+
+가치제안은 아래 형식을 참고해 한 문장으로 정리해줘
+`[핵심 고객]이 [기존 방식의 불편] 없이 [원하는 결과]를 얻을 수 있도록 [핵심 해결방식]을 제공`
+
+# 다음 단계 복사용 요약
+마지막에는 사업계획서 작성 단계에 그대로 복사할 수 있도록 아래 항목만 다시 정리해줘
+
+| 항목 | 내용 |
+|---|---|
+| 최종 아이템 | 최종 확정한 사업 아이템 |
+| 핵심 고객 | 최종 핵심 고객 |
+| 고객 정의 보정 | 데이터 검증에 따라 변경된 고객 기준과 변경 이유 |
+| 사용 상황 | 문제가 발생하는 주요 상황 |
+| 핵심 페인포인트 | 공식데이터로 검증된 핵심 문제 |
+| 핵심 손실 | 고객에게 발생하는 핵심 손실 |
+| 핵심 해결방식 | 문제를 해결하는 핵심 방식 |
+| 최종 사업 아이템 | 핵심 고객의 검증된 문제를 해결하는 최종 사업 아이템 1개 |
+| 가치제안 | 최종 가치제안 1문장 |
+| 경쟁분석 근거 | 기존 대안의 구조적 한계 |
+| 공식데이터 근거 | 핵심 수치·조사연도·출처 |</code></pre></div>
+<h4>아이템·가치제안 검증</h4><ul><li>최종 아이템이 검증된 핵심 페인포인트를 직접 해결하는지 확인할 것</li><li>핵심 고객과 사용 상황이 앞 단계 결과와 달라지지 않았는지 확인할 것</li><li>해결방식이 새로운 문제나 불필요한 기능을 추가하지 않았는지 확인할 것</li><li>가치제안이 기능 설명이 아니라 고객이 얻는 결과를 중심으로 작성되었는지 확인할 것</li><li>경쟁분석 근거와 공식데이터 근거가 최종 아이템과 직접 연결되는지 확인할 것</li></ul><div class="output"><b>실습 결과물</b><ul><li>최종 사업 아이템 1개 확정</li><li>핵심 해결방식 정리</li><li>가치제안 1문장 작성</li><li>다음 단계 복사용 요약</li></ul></div></article>
+<article class="card lesson" id="l4"><span class="lesson-num">4</span><h3>사업계획서 핵심항목·초안 작성</h3><ul><li>1~3에서 확정한 분석 결과와 최종 아이템을 바꾸지 않고 사업계획서로 문서화할 것</li><li>문제 → 근거 → 솔루션 → 타겟 → 비즈니스모델이 하나의 흐름으로 읽히도록 구성할 것</li><li>검증된 근거와 추가 검증이 필요한 내용을 구분하여 작성할 것</li></ul><div class="subsection"><h4>4.1 사업계획서 핵심항목 정리</h4><ul><li>앞 단계의 [다음 단계 복사용 요약] 전체를 그대로 입력하고 1~3의 결과를 사업계획서 항목에 맞게 재배열 할 것</li><li>문제는 [고객·상황·문제·손실·근거], 솔루션은 [해결방식·가치제안], 타겟과 비즈니스모델은 [초기 고객·지불 이유·수익구조]가 드러나도록 정리할 것</li><li>새로운 문제·아이템·기능을 추가하거나 타겟을 넓히지 말고, 확인되지 않은 내용은 [추가 검증 필요]로 표시 할 것</li></ul>
+<div class="prompt-block"><div class="prompt-head"><span>markdown · Claude 입력 프롬프트</span><button class="copy-btn">복사</button></div><pre><code>새로운 아이디어를 추가하지 말고 앞 단계 결과를 사업계획서 핵심항목 순서로 재구성해줘
+
+# 입력
+[앞 단계의 다음 단계 복사용 요약 붙여넣어]
+
+# 목표
+1~3에서 확정한 내용을 아래 사업계획서 핵심항목으로 정리해줘
+1 사업 아이템
+2 핵심 고객과 사용 상황
+3 고객 문제와 핵심 손실
+4 문제를 뒷받침하는 공식데이터·시장 근거
+5 기존 대안과 경쟁분석에서 확인한 한계
+6 핵심 해결방식
+7 가치제안
+8 초기 타겟 고객
+9 비즈니스모델과 수익 발생 구조
+10 아직 추가 검증이 필요한 내용
+
+문제, 솔루션, 고객, 근거가 서로 다른 이야기가 되지 않도록 하나의 흐름으로 연결해줘
+앞 단계에서 확정한 고객·문제·아이템·가치제안을 임의로 바꾸지 말아줘
+비즈니스모델은 여러 후보를 나열하지 말고 현재 아이템과 가장 자연스럽게 연결되는 초기 수익구조 1개만 정리해줘
+구체적인 가격이나 매출 전망처럼 아직 검증하지 않은 값은 만들지 말고 [추가 검증 필요]로 표시해줘
+
+# 출력 형식
+왼쪽 열은 항목, 오른쪽 열은 내용으로 구성된 2열 표로 정리해줘
+
+| 항목 | 내용 |
+|---|---|
+| 사업 아이템 | 최종 확정한 사업 아이템 |
+| 핵심 고객 | 검증된 핵심 고객 |
+| 사용 상황 | 문제가 발생하는 주요 상황 |
+| 고객 문제 | 공식데이터로 검증된 핵심 페인포인트 |
+| 핵심 손실 | 비용·시간·불안 등 고객에게 발생하는 손실 |
+| 문제 근거 | 공식데이터 핵심 수치·조사연도·출처 |
+| 경쟁 근거 | 기존 대안의 반복 불편·구조적 한계 |
+| 핵심 해결방식 | 고객 문제를 해결하는 핵심 방식 |
+| 가치제안 | 고객이 얻게 되는 핵심 결과 |
+| 초기 타겟 고객 | 가장 먼저 검증할 구체적인 고객 |
+| 비즈니스모델 | 고객이 비용을 지불하는 가치와 초기 수익 발생 구조 |
+| 추가 검증 | 아직 근거가 부족하거나 확인이 필요한 항목 |</code></pre></div>
+<h4>핵심항목·초안 데이터 검증</h4><ul><li>핵심 고객과 문제 발생 상황이 앞 단계 결과와 동일한지 확인할 것</li><li>핵심 페인포인트가 기능이나 해결책이 아니라 고객 문제로 작성되었는지 확인할 것</li><li>핵심 손실이 공식데이터 또는 경쟁분석 근거와 연결되는지 확인할 것</li><li>공식데이터 수치의 조사연도와 출처가 누락되지 않았는지 확인할 것</li><li>근거가 직접 설명하지 않는 주장이나 과장된 표현이 추가되지 않았는지 확인할 것</li></ul><div class="output"><b>실습 결과물</b><ul><li>핵심 고객·사용 상황·핵심 페인포인트를 연결한 문제 정의 1문장 작성</li><li>핵심 손실·공식데이터 근거 정리</li><li>기존 대안의 한계·경쟁분석 근거 정리</li></ul></div>
+<details><summary>사업계획서 작성 시 자주 하는 실수</summary><div class="details-body"><ul><li>시장이 크다는 사실만으로 고객 문제가 검증됐다고 작성하지 않을 것</li><li>앞 단계에서 확정한 고객·문제·아이템을 임의로 바꾸거나 타겟을 넓히지 않을 것</li><li>문제보다 기능과 장점을 먼저 설명하거나 기능 개수를 차별성으로 표현하지 않을 것</li><li>출처 없는 수치나 검증되지 않은 매출·점유율·성장률을 근거처럼 사용하지 않을 것</li><li>비즈니스모델은 가격만 제시하지 말고 [고객가치 → 지불 이유 → 수익구조]가 연결되도록 작성할 것</li></ul></div></details>
+<details><summary>추가 확인 비즈니스모델 보완이 필요한 경우 사용</summary><div class="details-body"><div class="prompt-block"><div class="prompt-head"><span>markdown</span><button class="copy-btn">복사</button></div><pre><code>확정한 문제와 아이템을 유지한 채 솔루션·초기 타겟·비즈니스모델의 연결성을 점검해줘
+# 입력
+[4.1 실습 결과물 전체 붙여넣어]
+[앞 단계에서 확정한 최종 아이템·가치제안 붙여넣어]
+아래 정보를 함께 사용해줘
+- 최종 사업 아이템
+- 핵심 해결방식
+- 가치제안
+# 목표
+아래 항목을 정리해줘
+1 핵심 해결방식
+2 최종 사업 아이템
+3 가치제안
+4 초기 타겟 고객
+5 고객이 비용을 지불할 이유
+6 가장 적합한 초기 수익모델 1개
+7 수익이 발생하는 구조
+8 기존 대안과의 핵심 차별점
+수익모델은 월 구독, 건별 과금, 중개·거래 수수료, 프리미엄 기능, B2B 제휴 등 중 사업 구조에 가장 자연스러운 방식 1개를 우선 선택해줘
+고객이 어떤 가치에 비용을 지불하는지와 해당 가치가 어떻게 수익으로 연결되는지 설명해줘. 구체적인 가격, 결제 시점, 결제 화면·기능은 현재 단계에서 확정하지 말고 [향후 고객 검증 후 구체화]로 표시해줘
+광고·추천 수익처럼 고객 신뢰와 충돌할 수 있는 모델은 현재 가치제안과 충돌 여부를 함께 확인해줘
+# 출력 형식
+왼쪽 열은 항목, 오른쪽 열은 내용으로 구성된 2열 표로 정리해줘
+
+| 항목 | 내용 |
+|---|---|
+| 핵심 해결방식 | 문제를 해결하는 핵심 방식 |
+| 최종 사업 아이템 | 확정된 사업 아이템 |
+| 가치제안 | 고객이 얻는 핵심 가치 |
+| 초기 타겟 고객 | 가장 먼저 확보할 구체적인 고객 |
+| 지불 이유 | 고객이 비용을 지불할 이유 |
+| 초기 수익모델 | 우선 적용할 수익모델 1개 |
+| 수익 발생 구조 | 고객가치가 수익으로 연결되는 방식 |
+| 향후 검증 | 가격·결제 시점·결제 기능 등 향후 고객 검증이 필요한 항목 |
+| 핵심 차별점 | 기존 대안과 비교한 차별점 |
+
+위 표 자체를 사업계획서 1페이지 초안 작성에 사용할 수 있도록 항목을 빠짐없이 정리해줘</code></pre></div></div></details></div>
+<div class="subsection"><h4>4.2 사업계획서 1페이지 초안 작성</h4><ul><li>4.1에서 정리한 사업계획서 핵심항목 전체를 그대로 입력할 것</li><li>1~3의 분석 결과와 4.1의 핵심항목을 하나의 사업계획서 흐름으로 문서화할 것</li><li>핵심 내용은 한 페이지 안에서 읽히도록 짧고 구체적으로 작성할 것</li><li>문제와 솔루션 사이의 연결, 공식데이터 근거, 고객의 지불 이유, 차별점을 반드시 포함할 것</li><li>현재까지 검증된 내용과 추가 검증이 필요한 사업화 과제를 구분하여 작성할 것</li></ul>
+<div class="prompt-block"><div class="prompt-head"><span>markdown · Claude 입력 프롬프트</span><button class="copy-btn">복사</button></div><pre><code>앞 단계에서 확정한 내용을 바꾸지 말고 1페이지 사업계획서 흐름으로 정리해줘
+# 입력
+[사업계획서 핵심항목 정리 결과 전체 붙여넣어]
+# 목표
+아래 항목을 연결해 사업계획서 1페이지 초안을 작성해줘
+1 사업 아이템
+2 핵심 고객
+3 고객 문제와 발생 상황
+4 핵심 손실
+5 문제를 뒷받침하는 공식데이터 근거
+6 핵심 해결방식
+7 가치제안
+8 초기 타겟 고객
+9 비즈니스모델
+10 기존 대안과의 차별성
+문제와 솔루션 사이에 논리적 비약이 없도록 작성해줘
+새로운 시장 수치나 근거를 임의로 추가하지 말아줘
+
+# 출력 형식
+표로 작성하지 말고 실제 사업계획서 1페이지 초안처럼 제목과 문단으로 작성해줘
+# 사업계획서 1페이지 초안
+## 사업 아이템
+최종 사업 아이템을 한 문장으로 작성
+## 1. 문제 정의 및 근거
+핵심 고객, 문제 발생 상황, 핵심 페인포인트와 손실을 연결해 2~3문장으로 작성하고 공식데이터 수치·조사연도·출처를 문장 안에 포함
+## 2. 솔루션 및 가치제안
+핵심 해결방식과 고객이 얻는 결과를 2~3문장으로 작성
+## 3. 초기 타겟 고객
+가장 먼저 확보할 고객을 구체적으로 1~2문장으로 작성
+## 4. 비즈니스모델
+초기 수익모델과 고객가치가 수익으로 연결되는 방식을 2~3문장으로 작성하고 아직 검증되지 않은 가격·결제 조건은 확정하지 말 것
+## 5. 차별성
+기존 대안과 비교해 고객이 선택할 이유를 2~3문장으로 작성
+
+## 6. 추가 검증 및 사업화 과제
+현재까지 검증된 내용과 추가 검증이 필요한 내용을 구분해 2~3문장으로 작성해줘
+가격·지불의사, 실제 이용행동, 기술 구현, 인허가, 개인정보·건강정보 관련 사항 중 사업화 전에 확인할 핵심 과제만 정리하고 확인되지 않은 내용은 [추가 검증 필요]로 표시해줘
+
+사업계획서 작성 시 아래 기준을 반드시 지켜줘
+- 시장이 크다는 사실만으로 고객 문제가 검증됐다고 작성하지 말아줘
+- 앞 단계에서 확정한 고객·문제·아이템을 임의로 바꾸거나 타겟을 넓히지 말아줘
+- 문제보다 기능과 장점을 먼저 설명하거나 기능 개수를 차별성으로 표현하지 말아줘
+- 출처 없는 수치나 검증되지 않은 매출·점유율·성장률을 근거처럼 사용하지 말아줘
+- 비즈니스모델은 가격만 제시하지 말고 [고객가치 → 지불 이유 → 수익구조]가 연결되도록 작성해줘
+
+각 항목은 메모나 키워드 나열이 아니라 제출 가능한 사업계획서 문장으로 작성해줘</code></pre></div>
+<h4>사업화 검증</h4><ul><li>사업 운영에 필요한 인허가·신고·인증 여부를 확인할 것</li><li>핵심 기능을 구현하는 데 필요한 기술 난이도와 외부 전문성이 있는지 확인할 것</li><li>초기 MVP 제작과 실제 사업 운영에 필요한 자본 수준을 구분해 확인할 것</li><li>MVP 이후 실제 고객에게 제공 가능한 수준까지 필요한 사업화 기간을 확인할 것</li><li>개인정보·건강정보·의료 관련 표현 등 법적·윤리적 리스크가 있는지 확인할 것</li><li>확인되지 않은 항목은 [추가 확인 필요]로 표시할 것</li></ul><div class="output"><b>실습 결과물</b><ul><li>사업계획서 1페이지 초안</li><li>문제·솔루션·타겟·BM 연결 확인</li><li>인허가·기술·초기자본·사업화 기간 체크</li></ul></div><div class="callout"><b>[선택 실습] 문서 체인</b><br>동일한 사업 내용을 공공지원사업 제출용 또는 투자 유치용 문서로 변환 가능<ul><li>공공지원사업용: 정책목표, 문제의 공공성, 실현 가능성, 고용·산업효과 중심</li><li>투자유치용: 시장성, 성장성, 차별적 경쟁우위, 확장성, 수익성 중심</li></ul></div></div></article>
+<article class="card lesson" id="l5"><span class="lesson-num">5</span><h3>서비스 콘셉트·웹 MVP 구현</h3><ul><li>4.2 사업계획서를 바탕으로 핵심 가설을 검증할 AI 기반 MVP를 정의하고 구현할 것</li></ul><div class="warn"><b>전문 판단 영역 사전 안내</b><br>성분 분석·인증 판정처럼 전문적 판단이 필요한 기능은 AI가 대신하지 않으며, 정보 정리·비교·의사결정 지원 수준으로 제한할 것</div>
+<div class="subsection"><h4>5.1 MVP 범위·유저 플로우·AI 역할 정의</h4><ul><li>실제 타겟 고객이 핵심 페인포인트를 충분히 크게 경험하고 제안한 해결방식에 반응하는지 확인할 핵심 가설 1개를 정의할 것</li><li>가설 검증에 필요한 사용자 행동 1개와 핵심 기능 3개만 선정하고, 최소 1개는 [AI 입력 → AI 처리 → AI 출력]이 명확한 AI 기능으로 설계할 것</li><li>사용자 데이터 수집이 필요한 경우에만 Google Sheets를 선택적으로 연동하고, [타겟 고객 여부 / 문제 발생 상황·빈도·강도 / 현재 해결방식 / 핵심 기능 사용행동 / AI 결과 만족도·추가 니즈] 중 가설 검증에 필요한 최소 데이터만 저장할 것</li><li>성분 분석·인증 판정·전문가 판단, 대규모 외부 DB 등 핵심 가설 검증에 필요하지 않은 기능은 [후속 개발] 또는 [추가 검증 필요]로 분리할 것</li><li>결제 의사를 확인해야 하는 경우에도 실제 PG(결제대행사) 연동 없이 모의(더미) 결제 화면으로만 구현할 것</li><li>이름·연락처 등 개인정보를 입력받는 화면에는 수집 목적을 밝히는 동의 문구와 동의 체크박스를 반드시 포함할 것</li><li>유저 플로우는 [서비스 진입 → 정보 입력 → AI 포함 핵심 기능 이용 → 결과 확인 → 피드백]을 기준으로 5단계 이내로 정리할 것</li></ul>
+<div class="prompt-block"><div class="prompt-head"><span>markdown · Claude 입력 프롬프트</span><button class="copy-btn">복사</button></div><pre><code>사업계획서를 실제 검증 가능한 MVP 범위로 줄여줘
+
+# 입력
+[사업계획서 1페이지 초안 전체 붙여넣어]
+
+# 목표
+사업계획서의 핵심 고객·문제·사업 아이템은 바꾸지 말고, 앞 단계에서 확인한 핵심 페인포인트를 실제 타겟 고객도 충분히 크게 경험하고 있으며 우리가 제안한 해결방식에 실제로 반응하는지 검증할 MVP 범위를 정리해줘
+완성 서비스를 만드는 것이 아니라 [문제를 실제로 경험하는가 → 제안한 해결방식을 실제로 사용해보는가 → 결과가 도움이 되었는가]를 확인하는 데 집중해줘
+
+먼저 MVP에서 검증할 핵심 가설을 1개 정의해줘
+핵심 가설은 단순히 서비스가 좋아 보이는지 묻는 것이 아니라 [실제 타겟 고객이 핵심 페인포인트를 충분히 크게 경험하고 있으며 제안한 해결방식을 행동으로 사용해보는가]를 확인할 수 있어야 해
+
+그다음 가설 검증에 필요한 최소 데이터를 정리해줘
+- 핵심 고객 여부를 확인하는 데이터
+- 문제 발생 상황·빈도·강도를 확인하는 데이터
+
+핵심 기능 3개 중 최소 1개는 AI가 실제 고객문제 해결에 기여하는 기능으로 정의해줘
+AI를 단순 챗봇이나 장식 기능으로 추가하지 말고 입력된 고객정보를 정리·분류·요약·비교·개인화 안내하는 등 핵심 가치 제공에 직접 사용해줘
+AI 적용 기능은 반드시 아래 구조로 정리해줘
+- AI 입력: 사용자가 제공하거나 서비스가 AI에 전달하는 정보
+- AI 처리: AI가 수행하는 정리·분류·요약·비교·개인화 역할
+- AI 출력: 사용자가 실제 화면에서 확인하는 결과
+성분 분석·인증 판정·전문가 판단처럼 AI가 대신하면 안 되는 영역은 제외하거나 정보 정리·의사결정 지원 수준으로 제한해줘
+- 현재 해결방식을 확인하는 데이터
+- 핵심 기능 사용 여부를 확인하는 행동 데이터
+- 결과 만족도·추가 니즈를 확인하는 데이터
+
+위 데이터 중 실제 가설 검증에 필요한 항목만 선정해줘
+데이터 저장이 필요한 경우에만 Google Sheets 연동 항목을 선택적으로 제안해줘
+이름·연락처 등 개인정보는 가설 검증에 꼭 필요한 경우에만 최소 범위로 포함해줘
+
+서비스 구현에 필요한 데이터는 아래 기준으로 함께 구분해줘
+- 사용자 직접 입력으로 확보 가능
+- 공개·공식자료로 확보 가능
+- 외부 DB·API가 필요
+- 전문가 판단이 필요
+
+외부 DB·API나 전문가 판단이 없으면 구현하기 어려운 기능은 MVP 핵심 기능에서 제외하고 [후속 개발] 또는 [추가 검증 필요]로 표시해줘
+성분 분석·인증 판정·전문가 판단처럼 전문적 판단이 필요한 기능은 정보 정리·비교·의사결정 지원 수준으로 조정해줘
+
+다음 항목을 정리해줘
+1 MVP에서 검증할 핵심 가설 1개
+2 MVP 핵심 고객
+3 확인할 핵심 사용자 행동 1개
+4 MVP에서 사용할 수 있는 데이터
+5 Google Sheets에 저장할 최소 검증 데이터 항목
+6 핵심 기능 3개
+7 AI 적용 기능과 AI 입력·처리·출력
+8 5단계 이내 유저 플로우
+9 MVP에서 제외하거나 후속 개발할 기능
+10 추가 검증이 필요한 사항
+
+| 항목 | 내용 |
+|---|---|
+| MVP 검증 가설 | 가장 먼저 확인할 고객가설 1개 |
+| 핵심 고객 | 사업계획서에서 확정한 초기 타겟 고객 |
+| 핵심 사용자 행동 | MVP에서 확인할 행동 1개 |
+| 사용 가능 데이터 | MVP에서 실제 확보 가능한 데이터 |
+| 핵심 기능 1 | 가설 검증에 필요한 기능 |
+| 핵심 기능 2 | 가설 검증에 필요한 기능 |
+| 핵심 기능 3 | 가설 검증에 필요한 기능 |
+| 유저 플로우 | 시작 → 입력 → 처리 → 결과 → 피드백 형태의 5단계 이내 흐름 |
+| 제외·후속 기능 | MVP에서 구현하지 않을 기능 |
+| 추가 검증 | 데이터·기술·법적·전문적 확인이 필요한 사항 |</code></pre></div><div class="output"><b>실습 결과물</b><ul><li>MVP 검증 가설 1개</li><li>핵심 사용자 행동 1개</li><li>핵심 기능 3개</li><li>5단계 이내 유저 플로우</li><li>제외·후속 기능과 추가 검증사항</li></ul></div></div>
+<div class="subsection"><h4>5.2 AI 포함 MVP PRD 작성</h4><ul><li>5.1에서 확정한 MVP 범위와 유저 플로우·AI 역할을 그대로 사용할 것</li><li>PRD는 완성 서비스 전체가 아니라 이번 실습에서 구현할 핵심 기능 3개와 필요한 화면만 정의할 것</li><li>AI 적용 기능은 [사용자 입력 → AI에 전달할 정보 → AI 처리 역할 → AI 출력 결과 → 화면 표시 방식]까지 구현 기준이 보이도록 작성할 것</li><li>AI가 생성하는 결과의 범위와 제한사항을 명확히 하고 성분 분석·인증 판정·전문가 판단을 대신하지 않도록 할 것</li><li>초기 가설 검증을 위해 저장할 사용자 입력·행동·AI 결과 피드백 데이터를 함께 정의하고 개인정보는 꼭 필요한 범위만 수집할 것</li></ul>
+<div class="prompt-block"><div class="prompt-head"><span>markdown · PRD 작성 프롬프트</span><button class="copy-btn">복사</button></div><pre><code># 역할
+너는 초기 스타트업의 웹 MVP를 설계하는 프로덕트 매니저야
+
+# 입력
+[MVP 범위·유저 플로우 결과 전체 붙여넣어]
+
+# 목표
+위 내용을 바꾸거나 기능을 추가하지 말고 실제 웹 MVP 제작에 바로 사용할 수 있는 간단한 PRD를 작성해줘
+PRD는 요약표가 아니라 개발·디자인에 바로 전달할 수 있는 문서 형태로 작성해줘
+
+다음 순서로 작성해줘
+
+## 1. MVP 목표와 검증 가설
+- 이번 MVP에서 무엇을 확인하려는지 작성
+- 가장 먼저 검증할 고객가설 1개를 명확히 작성
+
+## 2. 핵심 고객과 핵심 사용자 행동
+- 핵심 고객을 구체적으로 작성
+- MVP에서 반드시 확인해야 할 핵심 사용자 행동 1개를 작성
+
+## 3. 핵심 기능
+기능을 새로 추가하지 말고 입력한 결과에 포함된 핵심 기능 3개만 작성
+각 기능마다 아래 내용을 정리해줘
+- 기능명
+- 기능 목적
+- 사용자가 하는 행동
+- 서비스가 제공하는 결과
+
+## 4. AI 기능 스펙
+5.1에서 정한 AI 역할을 그대로 사용하고 새로운 AI 기능을 추가하지 말아줘
+아래 항목을 실제 구현 기준으로 작성해줘
+- AI 기능명
+- AI를 사용하는 이유
+- AI 입력 데이터
+- AI에 전달할 핵심 지시사항과 처리 역할
+- AI 출력 결과의 형식과 화면 표시 방식
+- AI 결과에서 금지하거나 제한할 판단
+- 사용자가 AI 결과에 대해 남길 피드백
+
+## 5. 유저 플로우
+시작부터 결과 확인과 피드백까지 5단계 이내로 작성
+각 단계에서 사용자가 무엇을 하고 서비스가 무엇을 보여주는지 함께 작성
+
+## 6. 화면 구성
+유저 플로우를 구현하는 데 필요한 화면만 작성
+AI 기능이 실행되는 화면에서는 [사용자 입력 → AI 처리 → AI 결과 표시]가 실제 화면 흐름으로 보이도록 작성
+개인정보를 입력받는 화면에는 수집 목적을 밝히는 동의 문구와 동의 체크박스를 포함해줘
+결제가 필요한 화면은 실제 PG 연동 없이 모의(더미) 결제로만 구현하고 실제 결제가 발생하지 않는다는 안내 문구를 포함해줘
+각 화면마다 아래 내용을 정리해줘
+- 화면명
+- 화면 목적
+- 주요 UI 요소
+- 사용자 입력
+- 서비스 출력
+- 다음 화면으로 이동하는 조건 또는 버튼
+
+## 7. Google Sheets 데이터 설계 (선택) 
+MVP에서 수집할 데이터를 아이디어와 검증 가설에 맞게 정리해줘
+각 데이터 항목마다 아래 내용을 작성해줘
+- 데이터명
+- 수집 시점
+- 입력 방식 또는 발생 조건
+- 수집 목적
+- 검증 가설과의 연결
+- 향후 서비스화 활용 가능성
+
+데이터 항목은 아래 목적 중 하나와 반드시 연결해줘
+- 핵심 고객이 실제 타겟에 해당하는지 확인
+- 고객 문제가 실제로 얼마나 자주 또는 크게 발생하는지 확인
+- 핵심 기능을 실제로 사용하는지 확인
+- 결과가 도움이 되었는지 확인
+- 향후 서비스 개선이나 고객 세분화에 활용
+
+이름, 연락처, 건강정보 등 개인정보는 가설 검증에 꼭 필요한 경우에만 포함하고 불필요한 항목은 제외해줘
+
+## 8. 구현 범위와 제외사항
+- 이번 MVP에서 구현할 범위
+- 이번 MVP에서 구현하지 않을 기능 (실제 PG 연동 결제, 성분 분석·인증 판정 등은 항상 이 항목에 포함할 것)
+- [후속 개발] 항목
+- [추가 검증 필요] 항목
+
+# 작성 원칙
+- 실제 웹 MVP 제작에 바로 사용할 수 있을 정도로 구체적으로 작성
+- 화면과 기능이 유저 플로우와 정확히 연결되도록 작성
+- 입력하지 않은 기능을 새로 제안하지 말 것
+- 사업계획서 전체 서비스를 구현하려 하지 말고 확정된 MVP 범위만 작성할 것
+- 설명용 아이디어 문서가 아니라 실제 구현용 PRD 형태로 작성할 것</code></pre></div><div class="output"><b>실습 결과물</b><ul><li>MVP PRD 1부</li><li>핵심 기능 3개와 주요 화면</li><li>사용자 입력·서비스 출력 구조</li><li>Google Sheets 저장 데이터 항목</li></ul></div></div>
+<div class="subsection"><h4>5.3 AI 기반 웹 MVP 구현</h4><ul><li>5.2에서 작성한 PRD를 기준으로 핵심 기능 3개와 필요한 화면만 실제 웹 MVP로 구현할 것</li><li>핵심 AI 기능은 [사용자 입력 → AI 처리 → AI 결과]가 실제로 작동하도록 구현할 것</li><li>사용자가 핵심 기능을 직접 사용하고 결과를 확인한 뒤 피드백할 수 있도록 전체 흐름을 연결할 것</li><li>가설 검증에 필요한 사용자 입력·사용행동·AI 결과 만족도·추가 니즈 데이터는 Google Sheets에 저장되도록 연결할 것</li><li>구현 후 [입력 → AI 처리 → 결과 확인 → 데이터 저장] 흐름이 정상 작동하는지 직접 테스트할 것</li></ul>
+<details><summary>[참고] Google Sheets 데이터 연동 저장 방법</summary><div class="details-body"><p>Google Sheets 연동은 MVP 검증에 사용자 데이터 저장이 필요한 경우에만 선택적으로 적용</p><div class="note">Google Sheets를 붙이는 목적은 데이터를 많이 모으는 것이 아니라, MVP의 핵심 가설을 검증할 최소 행동 데이터를 남기는 것으로 활용하시면 좋습니다.</div><div class="warn">[주의] Google Sheets는 수업용 MVP·프로토타입의 간단한 데이터 수집에는 적합하지만, 실제 상용 서비스의 회원정보·민감정보·대규모 데이터를 저장하는 정식 백엔드를 대신하는 구조로 보면 안 됨</div><h4>1) 먼저 MVP에서 저장할 데이터를 정의</h4><p>Google Sheets부터 만들지 말고, MVP에서 어떤 행동이나 결과를 검증할 것인지 먼저 정의</p><p>예시) 만족도 데이터</p><div class="table-wrap"><table class="data-table"><thead><tr><th>항목</th><th>예시</th><th>저장 목적</th></tr></thead><tbody><tr><td>timestamp</td><td>2026-08-20 14:32</td><td>사용 시점 확인</td></tr><tr><td>user_id</td><td>U001</td><td>익명 사용자 구분</td></tr><tr><td>pet_type</td><td>dog</td><td>사용자 입력 분석</td></tr><tr><td>pet_age</td><td>8</td><td>타겟 고객 특성 확인</td></tr><tr><td>input</td><td>최근 식욕이 줄었어요</td><td>실제 입력 내용 확인</td></tr><tr><td>ai_result</td><td>관리 가이드 결과</td><td>AI 출력 확인</td></tr><tr><td>feedback</td><td>도움됨</td><td>결과 만족도 확인</td></tr><tr><td>action</td><td>상담예약 클릭</td><td>실제 행동 확인</td></tr></tbody></table></div><p><b>저장 기준</b></p><ul><li>검증 가설과 관계없는 정보는 저장하지 않을 것</li><li>이름·전화번호·주소 등 개인정보는 실습 단계에서 가급적 수집하지 않을 것</li><li>건강정보 등 민감한 정보가 필요한 경우 실제 서비스 배포 전 별도 검토가 필요함</li><li>처음부터 많은 데이터를 모으지 말고 <b>5~8개 정도의 핵심 컬럼만 구성할 것</b></li></ul><h4>2) Google Sheets 만들기</h4><p>새 Google Sheets를 만들고 첫 번째 행에 저장할 항목명을 작성. 예시) 시트 이름은 `mvp_data`로 설정했다고 가정</p><p>이때 열 이름과 웹 MVP에서 보내는 데이터 이름을 동일하게 맞춰두는 것이 중요</p><h4>3) Google Apps Script 열기</h4><p>Google Sheets에서 확장 프로그램 → Apps Script를 선택</p><ul><li>Apps Script는 웹 MVP와 Google Sheets 사이에서 데이터를 받아 저장하는 간단한 서버 역할을 함</li><li>Google Apps Script 웹 앱은 `doPost(e)`를 정의하면 외부 프로그램이 보낸 POST 요청을 받을 수 있고, 웹 앱 형태로 배포할 수 있음</li></ul><h4>4) Apps Script 코드 입력</h4><p>직접 AI와 대화하면서 최종 확정 필요 Apps Script에 입력, 구글 시트명 반드시 확인하여 동일하게 구성</p><div class="prompt-block code-js"><div class="prompt-head"><span>javascript · Apps Script 예시</span><button class="copy-btn">복사</button></div><pre><code>function doPost(e) {
+  const sheet = SpreadsheetApp
+    .getActiveSpreadsheet()
+    .getSheetByName('mvp_data');
+
+  const data = JSON.parse(e.postData.contents);
+
+  sheet.appendRow([
+    new Date(),
+    data.user_id || '',
+    data.pet_type || '',
+    data.pet_age || '',
+    data.input || '',
+    data.ai_result || '',
+    data.feedback || '',
+    data.action || ''
+  ]);
+
+  return ContentService
+    .createTextOutput(
+      JSON.stringify({
+        success: true,
+        message: 'saved'
+      })
+    )
+    .setMimeType(ContentService.MimeType.JSON);
+}</code></pre></div><ul><li>웹 MVP → doPost(e) → JSON 데이터 읽기 → Google Sheets 행 추가 → 저장 결과 반환</li><li>Apps Script의 ContentService를 사용하면 JSON 형태의 응답을 반환할 수 있음</li></ul><h4>5) Apps Script를 웹 앱으로 배포</h4><p>Apps Script 오른쪽 상단에서 배포 → 새 배포 → 유형 선택 → 웹 앱 순서로 설정 후 배포를 누르면 웹 앱 URL이 생성됨</p><div class="prompt-block"><div class="prompt-head"><span>plain text</span><button class="copy-btn">복사</button></div><pre><code>https://script.google.com/macros/s/XXXXXXXXXXXX/exec</code></pre></div><p>이 주소가 <b>웹 MVP에서 데이터를 전송할 API 주소</b>가 됨</p><div class="warn">Apps Script 코드를 수정했다면 배포된 버전에도 변경사항이 반영되도록 새 버전으로 다시 배포할 것, 절대!! 새 배포가 아니라 기존 배포에서 새 버전으로 배포하는 것임</div><h4>5) 배포 주소를 MVP에 삽입</h4><p>주소를 확인해서 MVP에 전달하여 삽입</p><h4>7) 실제 MVP에서는 행동 데이터를 저장 테스트</h4></div></details>
+<details><summary>[참고] GitHub Pages로 웹 MVP 배포하기</summary><div class="details-body"><ol><li><b>GitHub에 새 Repository 생성</b><ul><li>예: nest-mvp</li><li>공개 저장소(Public)로 생성</li></ul></li><li><b>웹 MVP 파일 업로드</b><ul><li>`index.html`, `style.css`, `script.js` 등 프로젝트 파일을 Repository에 업로드</li><li>시작 페이지는 반드시 `index.html`로 구성할 것</li></ul></li><li><b>GitHub Pages 설정</b><ul><li>Repository → `Settings`</li><li>`Pages` 메뉴 선택</li><li>`Build and deployment`에서 Source: `Deploy from a branch`, Branch: `main`, Folder: `/ (root)`</li><li>`Save`</li></ul></li><li><b>배포 주소 확인</b><br>잠시 후 다음 형태의 주소가 생성됨</li><li><b>최종 테스트</b><br>배포 URL 접속하여 화면이 정상적으로 열리는지 확인</li></ol></div></details><div class="output"><b>실습 결과물</b><ul><li>AI 기능이 실제 작동하는 웹 MVP</li><li>핵심 유저 플로우 작동 확인</li><li>Google Sheets 데이터 저장 연동은 선택</li></ul></div></div></article>
+<article class="card lesson" id="l6"><span class="lesson-num">6</span><h3>최종 산출물 정리·제출</h3><ul><li>1~5단계에서 확정한 결과를 하나의 제출 패키지로 정리하고 최종 일관성과 작동 여부를 확인할 것</li></ul><div class="subsection"><h4>6.1 제출 패키지 정리</h4><ul><li>사업계획서, AI 기반 웹 MVP와 핵심 근거를 한곳에 정리할 것</li><li>웹 MVP는 바로 확인할 수 있도록 URL을 정리할 것</li><li>Google Sheets를 연동한 경우에만 검증 데이터 링크를 함께 정리할 것</li><li>추가 검증이 필요한 항목과 후속 개발 항목은 최종 결과와 구분해 표시할 것</li></ul></div><div class="subsection"><h4>6.2 최종 점검</h4><ul class="checklist"><li>핵심 고객·페인포인트·사업 아이템·가치제안이 1~5단계에서 동일하게 연결되어 있는지 확인</li><li>사업계획서의 해결방식과 MVP 핵심 기능·AI 역할이 일치하는지 확인</li><li>AI 기능이 실제로 작동하고 사용자에게 결과를 제공하는지 확인</li><li>MVP가 핵심 가설 검증에 필요한 범위만 구현되어 있는지 확인</li><li>MVP URL이 실제로 접속되고 핵심 기능이 동작하는지 확인</li><li>Google Sheets를 선택적으로 연동한 경우 사용자 입력·행동·피드백 데이터가 정상 저장되는지 확인</li><li>공식데이터 출처·핵심 수치와 [추가 검증 필요] 항목이 구분되어 있는지 확인</li></ul></div><div class="subsection"><h4>6.3 최종 산출물 목록</h4><ul><li>최종 사업계획서 1페이지</li><li>AI 기능이 실제 작동하는 웹 MVP 링크 또는 실행 화면</li><li>Google Sheets 검증 데이터 링크(선택)</li><li>시장·고객·경쟁 분석의 핵심 근거와 공식데이터 출처</li><li>추가 검증 필요·후속 개발 항목</li></ul><ul class="checklist"><li>[추가 검증 필요] 항목과 후속 개발 항목이 구분되어 있는지 확인</li></ul></div><div class="note"><b>✅ 오늘의 완료 기준</b><br>좋은 아이디어를 많이 만드는 것이 아니라, 근거가 있는 문제 하나를 선택하고 사업계획서와 AI 기반 MVP를 같은 논리로 연결해 실제로 확인 가능한 결과물 하나를 완성할 것</div></article>
+</div></section>
+</main>
+<footer class="footer"><div class="shell">2026 KU 캠퍼스타운 AI Nest 프로그램 · M3 산업 특화 × AI</div></footer><button class="backtop" id="backtop" aria-label="맨 위로">↑</button>
+<script>
+const back=document.getElementById('backtop');const lectureLinks=[...document.querySelectorAll('.lecture-nav a')];
+function onScroll(){const y=window.scrollY;back.classList.toggle('show',y>700);let active='';['l1','l2','l3','l4','l5','l6'].forEach(id=>{const el=document.getElementById(id);if(el&&el.getBoundingClientRect().top<120)active=id});lectureLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+active));}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();back.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+document.querySelectorAll('.copy-btn').forEach(btn=>{btn.addEventListener('click',async()=>{const code=btn.closest('.prompt-block').querySelector('code').innerText;try{await navigator.clipboard.writeText(code);const old=btn.textContent;btn.textContent='복사됨';btn.classList.add('done');setTimeout(()=>{btn.textContent=old;btn.classList.remove('done')},1400)}catch(e){const ta=document.createElement('textarea');ta.value=code;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();btn.textContent='복사됨';setTimeout(()=>btn.textContent='복사',1400)}})});
+</script>
+
+<script>
+const hero=document.getElementById('hero');const visual=document.getElementById('heroVisual');if(hero&&visual&&matchMedia('(pointer:fine)').matches&&!matchMedia('(prefers-reduced-motion: reduce)').matches){hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5;const y=(e.clientY-r.top)/r.height-.5;visual.style.transform=`translateY(-50%) translate(${x*10}px,${y*8}px) rotateX(${-y*2}deg) rotateY(${x*2}deg)`});hero.addEventListener('pointerleave',()=>{visual.style.transform='translateY(-50%)'})}
+</script>
+<script>
+(()=>{const hero=document.getElementById('hero');const visual=document.getElementById('heroVisual');if(!hero||!visual||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;const cards=[...visual.querySelectorAll('.pet-card')];hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();const nx=(e.clientX-r.left)/r.width-.5;const ny=(e.clientY-r.top)/r.height-.5;visual.style.transform=`translateY(-50%) rotateX(${(-ny*2.6).toFixed(2)}deg) rotateY(${(nx*3.2).toFixed(2)}deg)`;cards.forEach((card,i)=>{const d=(i+1)*2.2;card.style.translate=`${(nx*d).toFixed(1)}px ${(ny*d).toFixed(1)}px`;});});hero.addEventListener('pointerleave',()=>{visual.style.transform='translateY(-50%)';cards.forEach(c=>c.style.translate='');});})();
+</script>
+</body></html>
