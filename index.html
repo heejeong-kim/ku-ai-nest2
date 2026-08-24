@@ -1360,6 +1360,26 @@ const hero=document.getElementById('hero');const visual=document.getElementById(
 <script>
 (()=>{const hero=document.getElementById('hero');const visual=document.getElementById('heroVisual');if(!hero||!visual||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;const cards=[...visual.querySelectorAll('.pet-card')];hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();const nx=(e.clientX-r.left)/r.width-.5;const ny=(e.clientY-r.top)/r.height-.5;visual.style.transform=`translateY(-50%) rotateX(${(-ny*2.6).toFixed(2)}deg) rotateY(${(nx*3.2).toFixed(2)}deg)`;cards.forEach((card,i)=>{const d=(i+1)*2.2;card.style.translate=`${(nx*d).toFixed(1)}px ${(ny*d).toFixed(1)}px`;});});hero.addEventListener('pointerleave',()=>{visual.style.transform='translateY(-50%)';cards.forEach(c=>c.style.translate='');});})();
 </script>
+<style>
+details.learning-prompt>summary{background:#f3efff;color:#6741b8;border-color:#d8c8ff}
+details.learning-prompt>summary::before{border-color:#d8c8ff;color:#6741b8}
+details.learning-prompt>summary::after{color:#8062c5}
+</style>
+<script>
+(()=>{
+  document.querySelectorAll('details').forEach(detail=>{
+    const label=detail.querySelector(':scope>summary')?.textContent.trim()||'';
+    if(label==='추가 확인이 필요한 경우만 사용') detail.querySelectorAll(':scope> .details-body > details.learning-prompt').forEach(el=>el.remove());
+  });
+  ['5.2-A 상세 PRD 작성','5.3 AI 기반 웹 MVP 구현'].forEach(title=>{
+    document.querySelectorAll('h4').forEach(heading=>{
+      if(heading.textContent.trim()===title){
+        let node=heading.nextElementSibling;
+        while(node && !node.matches('h4')){if(node.matches('details.learning-prompt')) node.remove(); node=node.nextElementSibling;}
+      }
+    });
+  });
+})();
+</script>
 </body></html>
-
 
