@@ -1,0 +1,39 @@
+name: Update 6.3 final deliverables
+
+on:
+  push:
+    paths:
+      - '.github/workflows/update-final-output.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update section 6.3
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('index.html')
+          text = path.read_text(encoding='utf-8')
+          old = '''<div class="subsection"><h4>6.3 최종 산출물 목록</h4><ul><li>최종 사업계획서 1페이지</li><li>AI 기능이 실제 작동하는 웹 MVP 링크 또는 실행 화면</li><li>Google Sheets 검증 데이터 링크(선택)</li><li>시장·고객·경쟁 분석의 핵심 근거와 공식데이터 출처</li><li>추가 검증 필요·후속 개발 항목</li></ul><ul class="checklist"><li>[추가 검증 필요] 항목과 후속 개발 항목이 구분되어 있는지 확인</li></ul></div>'''
+          new = '''<div class="subsection"><h4>6.3 최종 산출물 목록</h4><ul><li>[필수] 최종 사업계획서 1페이지</li><li>[필수] AI 기능이 실제 작동하는 웹 MVP 링크 또는 실행 화면</li><li>[옵션] Google Sheets 검증 데이터 링크</li><li>[옵션] 시장·고객·경쟁 분석의 핵심 근거와 공식데이터 출처</li><li>[옵션] 추가 검증 필요·후속 개발 항목</li></ul></div>'''
+          if old not in text:
+              raise SystemExit('Target section not found; no changes made.')
+          path.write_text(text.replace(old, new, 1), encoding='utf-8')
+          PY
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Update 6.3 final deliverables list"
+          git push
