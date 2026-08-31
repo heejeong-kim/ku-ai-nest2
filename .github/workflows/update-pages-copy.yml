@@ -16,8 +16,8 @@ jobs:
           from pathlib import Path
           p=Path('index.html')
           s=p.read_text()
-          old='4. 잠시 후 다음 형태의 주소가 생성됨\n예) https://heejeong-kim.github.io/nest-mvp'
-          new='4. 잠시 후 다음 형태의 주소가 생성됨(Repository →  Settings >Pages  재접근\n예) https://heejeong-kim.github.io/nest-mvp'
+          old='4. 잠시 후 다음 형태의 주소가 생성됨'
+          new='4. 잠시 후 다음 형태의 주소가 생성됨(Repository →  Settings >Pages  재접근'
           if old not in s:
               raise SystemExit('target text not found')
           p.write_text(s.replace(old,new,1))
