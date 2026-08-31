@@ -1,0 +1,32 @@
+name: Update Pages copy v3
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/update-pages-copy-v3.yml']
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Replace exact HTML block
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text()
+          old = '<li><b>배포 주소 확인</b><br>잠시 후 다음 형태의 주소가 생성됨<br>예) https://heejeong-kim.github.io/nest-mvp</li>'
+          new = '<li><b>배포 주소 확인</b><br>잠시 후 다음 형태의 주소가 생성됨(Repository →  Settings >Pages  재접근)<br>예) https://heejeong-kim.github.io/nest-mvp</li>'
+          if old not in s:
+              raise SystemExit('exact target HTML not found')
+          p.write_text(s.replace(old, new, 1))
+          PY
+      - name: Commit change and remove workflow
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm .github/workflows/update-pages-copy-v3.yml
+          git add index.html
+          git commit -m 'fix: update GitHub Pages deployment instruction'
+          git push
